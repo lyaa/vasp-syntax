@@ -1,0 +1,938 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "vasp",
+	"patterns": [
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include":"#key-value"
+		}
+	],
+	"repository": {
+		"strings": {
+			"name": "string.quoted.double.vasp",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.vasp",
+					"match": "\\\\."
+				}
+			]
+		},
+		
+		"comments":{
+			"patterns": [
+				{
+				  "begin": "#",
+				  "beginCaptures":{
+					  "0":
+					  {"name": "punctuation.definition.comment.vasp"}},
+				  "end": "\\n",
+				  "name": "comment.line.number-sign.vasp"
+				},
+				{
+					"begin": "!",
+					"beginCaptures":{
+						"0":
+						{"name": "punctuation.definition.comment.vasp"}},
+					"end": "\\n",
+					"name": "comment.line.character.vasp"
+				  }
+			  ]
+		},
+		"key-value":{
+			"patterns": [
+				{
+					"begin":"\\b(ALGO)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.algo.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*\\b(Normal|VeryFast|Fast|Conjugate|All|Damped|Subrot|Eigenval|Exact|None|Nothing|CHI|G0W0|GW0|GW|scGW0|scGW|G0W0R|GW0R|GWR|scGW0R|scGWR|ACFDT|RPA|ACFDTR|RPAR|BSE|TDHF)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.algo.incar.vasp"
+						},
+						"3":{
+							"name": "comment.line.key-value.algo.incar.vasp"
+						}
+					}
+
+				},
+				{
+					"begin":"\\b(GGA)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.gga.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*\\b(91|PE|RP|PS|AM|HL|CA|PZ|WI|RE|VW|B3|B5|BF|CO|OR|BO|MK|RA|03|05|10|20|PL)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.gga.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.gga.incar.vasp"
+						}
+					}
+
+				},
+				{
+					"begin":"\\b(ADDGRID|CH_LSPEC|EVENONLY|EVENONLYGW|GGA_COMPAT|KGAMMA|LADDER|LAECHG|LASPH|LASYNC|LBERRY|LBLUEOUT|LBONE|LCALCEPS|LCALCPOL|LCHARG|LCHIMAG|LCORR|LDAU|LDIAG|LDIPOL|LEFG|LELF|LEPSILON|LFINITE_TEMPERATURE|LFOCKACE|LFOCKAEDFT|LHARTREE|LHFCALC|LHYPERFINE|LKPROJ|LLRAUG|LMIXTAU|LMODELHF|LMONO|LMP2LT|LNABLA|LNMR_SYM_RED|LNONCOLLINEAR|LOPTICS|LORBMOM|LPARD|LPEAD|LPLANE|LRPA|LSCAAWARE|LSCALAPACK|LSCALU|LSCSGRAD|LSELFENERGY|LSEPB|LSEPK|LSMP2LT|LSORBIT|LSPECTRAL|LSPECTRALGW|LSPIRAL|LSUBROT|LTHOMAS|LUSE_VDW|LVDW_EWALD|LVDWEXPANSION|LVHAR|LVTOT|LWANNIER90|LWANNIER90_RUN|LWAVE|LWRITE_MMN_AMN|LWRITE_UNK|LWRITE_WANPROJ|LZEROZ|ML_FF_LAFILT2_MB|ML_FF_LBASIS_DISCARD|ML_FF_LCOUPLE_MB|ML_FF_LCRITERIA|ML_FF_LEATOM_MB|ML_FF_LHEAT_MB|ML_FF_LMLFF|ML_FF_LNORM1_MB|ML_FF_LNORM2_MB|NLSPLINE|ODDONLY|ODDONLYGW|PFLAT|PHON_LBOSE|PHON_LMC)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.bool-keys.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*\\.*\\b(TRUE|True|true|FALSE|False|false)\\b\\.*\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "constant.language.key-value.bool-keys.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.bool-keys.incar.vasp"
+						}
+					}	
+				},
+				{
+					"begin":"\\b(LATTICE_CONSTRAINTS|LVDW_ONECELL)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.bool-array-keys.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*((\\.*\\b(TRUE|True|true|FALSE|False|false)\\b\\.*\\s*)+)\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "constant.language.key-value.bool-array-keys.incar.vasp"
+						},
+						"5": {
+							"name": "comment.line.key-value.bool-array-keys.incar.vasp"
+						}
+					}	
+				},
+				{
+					"begin":"\\b(AEXX|AGGAC|AGGAX|ALDAC|AMIN|ANDERSEN_PROB)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.zero-one-keys.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*\\b(1(\\.0+)?|0(\\.\\d*)?)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.parameter.key-value.zero-one-keys.incar.vasp"
+						},
+						"5": {
+							"name": "comment.line.key-value.zero-one-keys.incar.vasp"
+						}
+					}	
+				}
+				,
+				{
+					"begin":"\\b(AMIX|AMIX_MAG|APACO|BMIX|BMIX_MAG|CH_SIGMA|CLZ|CMBJA|CMBJB|CSHIFT|DEPER|DIMER_DIST|DQ|EBREAK|EDIFF|EDIFFG|EFIELD|EMAX|EMIN|ENAUG|ENCUT|ENCUTFOCK|ENCUTGW|ENCUTGWSOFT|ENINI|EPSILON|ESTOP|HFRCUT|HFSCREEN|HILLS_H|HILLS_W|HITOLER|KSPACING|LAMBDA|LANGEVIN_GAMMA_L|MINROT|ML_FF_AFILT2_MB|ML_FF_CDOUB|ML_FF_CSF|ML_FF_CSIG|ML_FF_CSLOPE|ML_FF_CTIFOR|ML_FF_EPS_LOW|ML_FF_RCOUPLE_MB|ML_FF_RCUT1_MB|ML_FF_RCUT2_MB|ML_FF_SIGV0_MB|ML_FF_SIGW0_MB|ML_FF_SION1_MB|ML_FF_SION2_MB|ML_FF_W1_MB|ML_FF_WTIFOR|ML_FF_WTOTEN|ML_FF_WTSIF|NELECT|NUPDOWN|OFIELD_A|OFIELD_KAPPA|OFIELD_Q6_FAR|OFIELD_Q6_NEAR|OMEGAMAX|OMEGAMIN|OMEGATL|PARAM1|PARAM2|PMASS|POMASS|POTIM|PSTRESS|PTHRESHOLD|SCALEE|SCSRAD|SHAKETOL|SIGMA|SMASS|STEP_MAX|STEP_SIZE|SYMPREC|TEBEG|TEEND|TIME|VCAIMAGES|VCUTOFF|VDW_A1|VDW_A2|VDW_CNRADIUS|VDW_D|VDW_RADIUS|VDW_S6|VDW_S8|VDW_SR|WC|WEIMIN|ZVAL)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.real-keys.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(-?\\b\\d+(\\.\\d*)?((e|E)-?\\+?\\d+)?)\\b\\s*([\\!\\#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.parameter.key-value.real-keys.incar.vasp"
+						},
+						"6": {
+							"name": "comment.line.key-value.real-keys.incar.vasp"
+						}
+					}	
+				},
+				{
+					"begin":"\\b(CMBJ|DIPOL|EFIELD_PEAD|EINT|FERDO|FERWE|INCREM|LANGEVIN_GAMMA|LDAUJ|LDAUU|M_CONSTR|MAGMOM|ML_FF_EATOM|NGYROMAG|PHON_TLIST|PSUBSYS|QMAXFOCKAE|QSPIRAL|QUAD_EFG|ROPT|RWIGS|SAXIS|TSUBSYS|VALUE_MAX|VALUE_MIN|VCA|VDW_C6|VDW_R0)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.real-array-keys.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*((-?\\b\\d+\\*?\\d+(\\.\\d*)?((e|E)-?\\+?\\d+)?\\s*)+)\\b\\s*([\\!\\#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.parameter.key-value.real-array-keys.incar.vasp"
+						},
+						"7": {
+							"name": "comment.line.key-value.real-array-keys.incar.vasp"
+						}
+					}	
+				},
+				{
+					"begin":"\\b(CH_NEDOS|CLL|CLN|CLNT|FINDIFF|HFLMAX|HILLS_BIN|IMAGES|KBLOCK|KPAR|LMAXFOCK|NMAXFOCKAE|LMAXFOCKAE|LMAXMIX|LMAXPAW|LMAXTAU|MAXMEM|MAXMIX|ML_FF_IAFILT2_MB|ML_FF_IBROAD1_MB|ML_FF_IBROAD2_MB|ML_FF_ICUT1_MB|ML_FF_ICUT2_MB|ML_FF_IERR|ML_FF_IREG_MB|ML_FF_ISAMPLE|ML_FF_ISCALE_TOTEN_MB|ML_FF_ISOAP1_MB|ML_FF_ISOAP2_MB|ML_FF_ISTART|ML_FF_IWEIGHT|ML_FF_LMAX2_MB|ML_FF_MB_MB|ML_FF_MCONF|ML_FF_MCONF_NEW|ML_FF_MHIS|ML_FF_MRB1_MB|ML_FF_MRB2_MB|ML_FF_MSPL1_MB|ML_FF_MSPL2_MB|ML_FF_NATOM_COUPLED_MB|ML_FF_NDIM_SCALAPACK|ML_FF_NHYP1_MB|ML_FF_NHYP2_MB|ML_FF_NMDINT|ML_FF_NR1_MB|ML_FF_NR2_MB|ML_FF_NWRITE|NATURALO|NBANDS|NBANDSGW|NBANDSO|NBANDSV|NBLK|NBLOCK|NBMOD|NBSEEIG|NCORE|NCORE_IN_IMAGE1|NDAV|NEDOS|NELM|NELMDL|NELMIN|NFREE|NGX|NGXF|NGY|NGYF|NGZ|NGZF|NKRED|NKREDX|NKREDY|NKREDZ|NOMEGA|NOMEGAPAR|NOMEGAR|NPACO|NPAR|NPPSTR|NSIM|NSTORB|NSW|NTAUPAR|PHON_NSTRUCT|PHON_NTLIST|PLEVEL|PROUTINE|SHAKEMAXITER|SPRING)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.integer-keys.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(-?\\d+((e|E)-?\\+?\\d+)?)\\b\\s*([\\!\\#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.parameter.key-value.integer-keys.incar.vasp"
+						},
+						"5": {
+							"name": "comment.line.key-value.integer-keys.incar.vasp"
+						}
+					}	
+				},
+				{
+					"begin":"\\b(IBAND|KPOINT_BSE|KPUSE|LDAUL|ML_FF_ICOUPLE_MB|NCRPA_BANDS|NSUBSYS|NTARGET_STATES|RANDOM_SEED|SMEARINGS)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.integer-array-keys.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*((-?\\d+((e|E)-?\\+?\\d+)?\\s*)+)\\b\\s*([\\!\\#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.parameter.key-value.integer-array-keys.incar.vasp"
+						},
+						"6": {
+							"name": "comment.line.key-value.integer-array-keys.incar.vasp"
+						}
+					}	
+				},
+				{
+					"begin":"\\b(ANTIRES)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.antires.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*\\b(0|1|2)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.antires.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.antires.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(I_CONSTRAINED_M)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.i_constrained_m.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*\\b(1|2)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.i_constrained_m.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.i_constrained_m.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(IALGO)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.ialgo.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(-1|2|3|4|5|6|7|8|15|16|17|18|28|38|44|45|46|47|48|53|54|55|56|57|58|90)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.ialgo.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.ialgo.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(IBRION)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.ibrion.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(-1|0|1|2|3|5|6|7|8|44)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.ibrion.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.ibrion.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(ICHARG)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.icharg.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(0|1|2|4|10|11|12)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.icharg.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.icharg.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(ICHIBARE)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.ichibare.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(1|2|3)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.ichibare.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.ichibare.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(ICORELEVEL)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.icorelevel.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(0|1|2)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.icorelevel.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.icorelevel.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(IDIPOL)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.idipol.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(1|2|3|4)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.idipol.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.idipol.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(IEPSILON)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.iepsilon.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(1|2|3|4)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.iepsilon.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.iepsilon.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(IGPAR)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.igpar.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(1|2|3)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.igpar.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.igpar.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(IMIX)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.imix.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(0|1|2|4)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.imix.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.imix.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(INIMIX)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.inimix.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(0|1|2)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.inimix.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.inimix.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(INIWAV)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.iniwav.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(0|1)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.iniwav.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.iniwav.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(IPEAD)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.ipead.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(1|2|3|4)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.ipead.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.ipead.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(ISIF)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.isif.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(0|1|2|3|4|5|6|7)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.isif.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.isif.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(ISMEAR)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.ismear.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(-5|-4|-3|-2|-1|\\d+)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.ismear.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.ismear.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(ISPIN)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.ispin.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(1|2)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.ispin.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.ispin.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(ISTART)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.istart.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(0|1|2|3)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.istart.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.istart.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(ISYM)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.isym.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(-1|0|1|2|3)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.isym.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.isym.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(IVDW)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.ivdw.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(0|1|10|11|12|13|2|20|21|202|4)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.ivdw.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.ivdw.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(IWAVPR)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.iwavpr.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(0|1|2|3|10|11|12|13)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.iwavpr.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.iwavpr.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(LDAUPRINT)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.ldauprint.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(0|1|2)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.ldauprint.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.ldauprint.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(LDAUTYPE)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.ldautype.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(1|2|4)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.ldautype.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.ldautype.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(LORBIT)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.lorbit.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*(0|1|2|5|10|11|12|13|14)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.lorbit.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.lorbit.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(LREAL)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.lreal.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*\\.?\\b(FALSE|False|false|TRUE|True|true|Auto|A|On|O)\\b\\.?\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.lreal.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.lreal.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(MDALGO)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.mdalgo.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*\\b(0|1|2|3|11|21|13)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.mdalgo.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.mdalgo.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(METAGGA)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.metagga.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*\\b(TPSS|RTPSS|M06L|MBJ|SCAN|MS0|MS1|MS2)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.metagga.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.metagga.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(MIXPRE)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.mixpre.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*\\b(0|1|2|3)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.mixpre.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.mixpre.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(NWRITE)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.nwrite.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*\\b(0|1|2|3|4)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.nwrite.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.nwrite.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(PREC)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.prec.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*\\b(Low|Medium|High|Normal|Single|Accurate)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.prec.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.prec.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(PRECFOCK)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.precfock.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*\\b(Low|Medium|Fast|Normal|Accurate)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.precfock.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.precfock.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(VOSKOWN)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.voskown.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*\\b(0|1)\\b\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.voskown.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.voskown.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(SYSTEM)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.system.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*([\\w\\d\\s]*)\\s*(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "markup.heading.key-value.system.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.system.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(LOCPROJ)\\b\\s*(\\=)\\s*\"",
+					"beginCaptures":{
+						"1":{
+							"name": "keyword.locproj.incar.vasp"
+						},
+						"2":{
+							"name": "keyword.operator.key-value.incar.vasp"
+						}
+					},
+					"end":"[\\w\\d\\s\\:\\(\\)]+\"\\s*([!#\\w\\d\\s]*)(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "comment.line.key-value.locproj.incar.vasp"
+						}
+					}
+				},
+				{
+					"begin":"\\b(LOCPROJ)\\b\\s*",
+					"beginCaptures":{
+						"0":{
+							"name": "keyword.locproj.incar.vasp"
+						}
+					},
+					"end":"(\\=)\\s*([\\w\\d\\s\\:\\(\\)]*)\\s*(\\n|\\;)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.key-value.incar.vasp"
+						},
+						"2": {
+							"name": "variable.language.key-value.locproj.incar.vasp"
+						},
+						"3": {
+							"name": "comment.line.key-value.locproj.incar.vasp"
+						}
+					}
+				}
+
+
+
+			]
+		}
+		
+	},
+	"scopeName": "source.vasp"
+}
