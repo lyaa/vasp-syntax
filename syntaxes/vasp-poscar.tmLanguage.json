@@ -1,0 +1,128 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "vasp",
+  "patterns": [
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#poscar"
+    }
+  ],
+  "repository": {
+    "strings": {
+      "name": "string.quoted.double.vasp",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.vasp",
+          "match": "\\\\."
+        }
+      ]
+    },
+
+    "comments": {
+      "patterns": [
+        {
+          "begin": "#",
+          "beginCaptures": {
+            "0": { "name": "punctuation.definition.comment.vasp" }
+          },
+          "end": "\\n",
+          "name": "comment.line.number-sign.vasp"
+        },
+        {
+          "begin": "!",
+          "beginCaptures": {
+            "0": { "name": "punctuation.definition.comment.vasp" }
+          },
+          "end": "\\n",
+          "name": "comment.line.character.vasp"
+        }
+      ]
+    },
+    "poscar": {
+      "patterns": [
+        {
+          "begin": "^\\s*(-?\\b\\d+(\\.\\d*)?((e|E)-?\\+?\\d+)?)\\b\\s*((\\!|\\#)[^\\n\\;]*)?(\\n|\\;)",
+          "beginCaptures": {
+            "1": {
+              "name": "constant.numeric.scale.poscar.vasp"
+            },
+            "5": {
+              "name": "comment.line.scale.poscar.vasp"
+            }
+          },
+          "while": "^([ \\t]*((-?(?:\\d+\\*)?-?\\d+(?:\\.\\d*)?(?:(?:e|E)-?\\+?\\d+)?[ \\t]*){3,3}[ \\t]*)[ \\t]*([^\\n\\;]*))?\\n",
+          "whileCaptures": {
+            "2": {
+              "name": "variable.parameter.lattice-vectors.poscar.vasp"
+            },
+            "4": {
+              "name": "comment.line.lattice-vectors.poscar.vasp"
+            }
+          }
+        },
+        {
+          "match": "^\\s*\\b((?i:(selective|sel|s))([^\\n\\;\\!\\#]*))([^\\n\\;]*)(\\n|\\;)",
+          "captures": {
+            "1": {
+              "name": "entity.name.tag.poscar.vasp"
+            },
+            "4": {
+              "name": "comment.line.poscar.vasp"
+            }
+          }
+        },
+        {
+          "begin": "(^\\s*(?i:(Direct|d|cartesian|cart|c[ \\t]|k[ \\t]))([^\\n\\;\\!\\#]*))([^\\n\\;]*)(\\n|\\;)",
+          "captures": {
+            "1": {
+              "name": "entity.name.tag.poscar.vasp"
+            },
+            "4": {
+              "name": "comment.line.poscar.vasp"
+            }
+          },
+          "while": "^([ \\t]*((-?(?:\\d+\\*)?-?\\d+(?:\\.\\d*)?(?:(?:e|E)-?\\+?\\d+)?[ \\t]*){3,3})[ \\t]*((\\.?(t|T|f|F)\\.?[ \\t]*){,3})[ \\t]*([^\\n\\;]*))?\\n",
+          "whileCaptures": {
+            "2": {
+              "name": "variable.parameter.real-list.poscar.vasp"
+            },
+            "4": {
+              "name": "constant.numeric.real-list.poscar.vasp"
+            },
+            "7": {
+              "name": "comment.line.real-list.poscar.vasp"
+            }
+          }
+        },
+        {
+          "begin": "^[ \\t]*(([A-Z][a-z]?\\s+)+)(\\s*(\\!|\\#)[^\\n\\;]*)?",
+          "beginCaptures": {
+            "1": {
+              "name": "entity.name.tag.element-list.poscar.vasp"
+            },
+            "3": {
+              "name": "comment.line.element-list.poscar.vasp"
+            }
+          },
+          "end": "\\s*((\\d+((e|E)\\+?\\d+)?\\s*)+)\\b\\s*([^\\n\\;]*)(\\n|\\;)",
+          "endCaptures": {
+            "1": {
+              "name": "variable.parameter.element-list.poscar.vasp"
+            },
+            "5": {
+              "name": "comment.line.element-list.poscar.vasp"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "scopeName": "source.poscar.vasp"
+}

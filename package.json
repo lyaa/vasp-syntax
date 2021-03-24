@@ -1,33 +1,84 @@
 {
-    "name": "vasp-syntax",
-    "displayName": "VASP Syntax Support",
-    "description": "Language definition and value-aware syntax highlighting for the Vienna Ab initio Simulation Package (VASP) input files. Currently supports INCAR files and colors valid tags and values.",
-    "version": "1.0.0",
-    "engines": {
-        "vscode": "^1.54.0"
-    },
-    "categories": [
-        "Programming Languages"
+  "name": "vasp-syntax",
+  "displayName": "VASP Syntax Support",
+  "description": "Language definition and value-aware syntax highlighting for the Vienna Ab initio Simulation Package (VASP) input files. Currently supports INCAR files and colors valid tags and values.",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "publisher": "gluon",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lyaa/vasp-syntax"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "incar.vasp",
+        "aliases": [
+          "INCAR",
+          "Incar"
+        ],
+        "filenamePatterns": [
+          "INCAR"
+        ],
+        "extensions": [
+          "INCAR"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "poscar.vasp",
+        "aliases": [
+          "POSCAR",
+          "Poscar"
+        ],
+        "filenamePatterns": [
+          "POSCAR",
+          "CONTCAR"
+        ],
+        "extensions": [
+          "POSCAR",
+          "CONTCAR"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "kpoints.vasp",
+        "aliases": [
+          "KPOINTS",
+          "Kpoints"
+        ],
+        "filenamePatterns": [
+          "KPOINTS",
+          "IBZKPT"
+        ],
+        "extensions": [
+          "KPOINTS",
+          "IBZKPT"
+        ],
+        "configuration": "./language-configuration.json"
+      }
     ],
-    "publisher":"gluon",
-    "repository": {
-		"type": "git",
-		"url": "https://github.com/lyaa/vasp-syntax"
-	},
-    "contributes": {
-        "languages": [{
-            "id": "vasp",
-            "aliases": ["VASP", "Vasp"],
-            "filenamePatterns": [
-                "INCAR"
-              ],
-            "extensions": ["INCAR"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "vasp",
-            "scopeName": "source.vasp",
-            "path": "./syntaxes/vasp.tmLanguage.json"
-        }]
-    }
+    "grammars": [
+      {
+        "language": "incar.vasp",
+        "scopeName": "source.incar.vasp",
+        "path": "./syntaxes/vasp-incar.tmLanguage.json"
+      },
+      {
+        "language": "poscar.vasp",
+        "scopeName": "source.poscar.vasp",
+        "path": "./syntaxes/vasp-poscar.tmLanguage.json"
+      },
+      {
+        "language": "kpoints.vasp",
+        "scopeName": "source.kpoints.vasp",
+        "path": "./syntaxes/vasp-kpoints.tmLanguage.json"
+      }
+    ]
+  }
 }
