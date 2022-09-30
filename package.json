@@ -2,12 +2,13 @@
   "name": "vasp-syntax",
   "displayName": "VASP Syntax Support",
   "description": "Language definition and value-aware syntax highlighting for the Vienna Ab initio Simulation Package (VASP) input files. Currently supports INCAR files and colors valid tags and values.",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "engines": {
     "vscode": "^1.54.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Snippets"
   ],
   "publisher": "gluon",
   "repository": {
@@ -78,6 +79,12 @@
         "language": "kpoints.vasp",
         "scopeName": "source.kpoints.vasp",
         "path": "./syntaxes/vasp-kpoints.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "incar.vasp",
+        "path": "./snippets/vasp-incar.json"
       }
     ]
   }

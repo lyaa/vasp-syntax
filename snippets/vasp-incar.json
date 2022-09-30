@@ -1,0 +1,98 @@
+{
+	"Declare performance optimization parameters":{
+		"prefix":["NCORE","KPAR","LREAL"],
+		"body": [
+			"#performance optimization parameters",
+			"NCORE =    $1           # number of cores dedicated to each orbital",
+			"KPAR  =    4           # number of groups used for each set of k-points",
+			"LREAL =    ${2|.TRUE.,.FALSE.|}     # determines whether the projection operators are evaluated in real-space or in reciprocal space",
+			"",
+			"$0"
+		],
+		"description": " Declare performance optimization settings"
+	},
+
+	"Start Parameters": {
+		"prefix":["ISTART", "ICHARG"],
+		"body": [
+			"# starting parameters",
+			"ISTART =    $1          # 0-new  1- orbitals from WAVECAR",
+			"ICHARG =    $2          # charge: 1-file 2-atom 10-const",
+			"",
+			"$0"
+		],
+		"description": "Declare starting parameters"
+	},
+
+	"Electronic Optimization": {
+	"prefix": ["ENCUT","ALGO", "NELM", "EDIFF"],
+	"body": [
+		"# electronic optimization settings",
+		"ENCUT =    300         # defaults from POTCAR, but wise to include",
+		"ALGO  =    FAST        # alorithm for electron optimization, can be also Normal or ALL",
+		"NELM  =    80          # sets the maximum number of electronic SC (self-consistency) steps",
+		"EDIFF =    1E-06       # stopping-criterion for ELM",
+		"PREC  =    ${1|Accurate,High,Normal,Medium|}    # specifies the \"precision\"-mode. ",
+		"",
+		"$0"
+	],
+	"description": "Declare electronic optimization settings"
+	},
+
+	"DOSCAR and PROCAR settings": {
+	"prefix": "LORBIT",
+	"body": [
+		"LORBIT =    11   # write DOSCAR and lm-decomposed PROCAR",
+		"$0"
+	],
+	"description": "write DOSCAR and lm-decomposed PROCAR"
+	},
+	
+	"Degrees of Freedom": {
+	"prefix": "ISIF",
+	"body": [
+		"ISIF =    $1   # determines which principal degrees-of-freedom are allowed to change",
+		"$0"
+	],
+	"description": "determines whether the stress tensor is calculated and which principal degrees-of-freedom are allowed to change in relaxation and molecular dynamics runs. "
+	},
+
+	"Ionic Relaxation": {
+	"prefix": ["EDIFFG", "NSW","IBRION"],
+	"body": [
+		"# ionic relaxation parameters",
+		"EDIFFG =    -1E-02     # stopping-criterion for IOM (all forces smaller 1E-2)",
+		"NSW    =    20         # number of steps for IOM",
+		"IBRION =    2          # CG for ions, often 1 (RMM-DISS) is faster",
+		"",
+		"$0"
+	],
+	"description": "Declare ionic relaxation parameters"
+	},
+	
+	"Spin-Orbit Coupling": {
+	"prefix": "LSORBIT",
+	"body": [
+		"LSORBIT = .TRUE.",
+		"ICHARG = 11            # non selfconsistent run, read CHGCAR",
+		"LMAXMIX = 4            # for d-elements increase LMAXMIX to 4, f-elements: LMAXMIX = 6",
+		"                       # you need to set LMAXMIX already in the collinear calculation",
+		"NBANDS = $1            # 2 * number of bands of collinear run",
+		"$0"
+	],
+	"description": "General settings for adding spin orbit coupling. Should be applied after a self consistent run"
+	},
+
+	"Magnetism": {
+	"prefix": ["ISPIN","MAGMOM"],
+	"body": [
+		"#Magnetism",
+		"ISPIN     = $1",
+		"MAGMOM    = $2",
+		"",
+		"$0"
+	],
+	"description": "Determine how vasp constucts charge density and the initial magentic moment of each atom"
+	}
+	
+}
