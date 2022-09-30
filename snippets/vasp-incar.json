@@ -81,6 +81,18 @@
 		"$0"
 	],
 	"description": "General settings for adding spin orbit coupling. Should be applied after a self consistent run"
+	},
+
+	"Magnetism": {
+	"prefix": ["ISPIN","MAGMOM"],
+	"body": [
+		"#Magnetism",
+		"ISPIN     = $1",
+		"MAGMOM    = $2",
+		"",
+		"$0"
+	],
+	"description": "Determine how vasp constucts charge density and the initial magentic moment of each atom"
 	}
 	
 }
