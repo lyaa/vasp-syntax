@@ -1,0 +1,14 @@
+{
+ "Gamma centered kpoints": {
+ "prefix": "gamma",
+ "body": [
+	 "k-points",
+	 "$1",
+	 "gamma",
+	 " $2  $3  $4",
+	 " 0  0  0"
+ ],
+ "description": "gamma centered k-points scheme"
+ }
+ 
+}
