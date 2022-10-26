@@ -1,0 +1,3114 @@
+{
+	"CLL": {
+		"prefix": "CLL",
+		"body": [
+			"CLL = $1",
+			"$2"
+		],
+		"description": "CLL selects the angular (l) quantum number of the excited electron when using ICORELEVEL."
+	},
+	"LDAUJ": {
+		"prefix": "LDAUJ",
+		"body": [
+			"LDAUJ = $1",
+			"$2"
+		],
+		"description": "LDAUJ specifies the strength of the effective on-site exchange interactions."
+	},
+	"LSCDM": {
+		"prefix": "LSCDM",
+		"body": [
+			"LSCDM = $1",
+			"$2"
+		],
+		"description": "LSCDM switches on the selected columns of the density matrix (SCDM) method."
+	},
+	"FERDO": {
+		"prefix": "FERDO",
+		"body": [
+			"FERDO = $1",
+			"$2"
+		],
+		"description": "FERDO sets the occupancies of the states in the down-spin channel for ISMEAR=-2 and ISPIN=2."
+	},
+	"LBLUEOUT": {
+		"prefix": "LBLUEOUT",
+		"body": [
+			"LBLUEOUT = $1",
+			"$2"
+		],
+		"description": "for LBLUEOUT=.TRUE., VASP writes output for the free-energy gradient calculation to the REPORT file (in case VASP was compiled with -Dtbdyn)."
+	},
+	"LANGEVIN_GAMMA_L": {
+		"prefix": "LANGEVIN_GAMMA_L",
+		"body": [
+			"LANGEVIN_GAMMA_L = $1",
+			"$2"
+		],
+		"description": "LANGEVIN_GAMMA_L specifies the friction coefficient (in ps-1) for lattice degrees-of-freedom in case of Parrinello-Rahman dynamics (in case VASP was compiled with -Dtbdyn)."
+	},
+	"LSEPK": {
+		"prefix": "LSEPK",
+		"body": [
+			"LSEPK = $1",
+			"$2"
+		],
+		"description": "Write the charge density of every k point to the files PARCHG.*.nk (LSEPK=.TRUE.) or merge them to a single file (LSEPK=.False.)."
+	},
+	"LNMR_SYM_RED": {
+		"prefix": "LNMR_SYM_RED",
+		"body": [
+			"LNMR_SYM_RED = $1",
+			"$2"
+		],
+		"description": "discard symmetry operations that are not consistent with the way k-space derivatives are calculated in the linear-response calculations of chemical shifts."
+	},
+	"LHFCALC": {
+		"prefix": "LHFCALC",
+		"body": [
+			"LHFCALC = $1",
+			"$2"
+		],
+		"description": "LHFCALC specifies whether Hartree-Fock/DFT hybrid functional type calculations are performed."
+	},
+	"ALGO": {
+		"prefix": "ALGO",
+		"body": [
+			"ALGO = $1",
+			"$2"
+		],
+		"description": "the ALGO tag is a convenient option to specify the electronic minimization algorithm (as of VASP.4.5) and/or to select the type of GW calculations."
+	},
+	"AMIN": {
+		"prefix": "AMIN",
+		"body": [
+			"AMIN = $1",
+			"$2"
+		],
+		"description": "AMIN specifies the minimal mixing parameter in Kerker's initial approximation[1] to the charge-dielectric function used in the Broyden[2][3]/Pulay[4] mixing scheme (IMIX=4, INIMIX=1)."
+	},
+	"LOPTICS": {
+		"prefix": "LOPTICS",
+		"body": [
+			"LOPTICS = $1",
+			"$2"
+		],
+		"description": "LOPTICS=.TRUE. calculates the frequency dependent dielectric matrix after the electronic ground state has been determined."
+	},
+	"LSCAAWARE": {
+		"prefix": "LSCAAWARE",
+		"body": [
+			"LSCAAWARE = $1",
+			"$2"
+		],
+		"description": "LSCAAWARE controls the distribution of the Hamilton matrix."
+	},
+	"LSPIRAL": {
+		"prefix": "LSPIRAL",
+		"body": [
+			"LSPIRAL = $1",
+			"$2"
+		],
+		"description": "set LSPIRAL=.TRUE. to represent spin spirals by means of a generalized Bloch condition."
+	},
+	"LSCALER0": {
+		"prefix": "LSCALER0",
+		"body": [
+			"LSCALER0 = $1",
+			"$2"
+		],
+		"description": "LSCALER0 decides whether to compute SCS contribution to gradients or not."
+	},
+	"VASP": {
+		"prefix": "VASP",
+		"body": [
+			"VASP = $1",
+			"$2"
+		],
+		"description": "Contents"
+	},
+	"CLN": {
+		"prefix": "CLN",
+		"body": [
+			"CLN = $1",
+			"$2"
+		],
+		"description": "CLN selects the main quantum number of the excited electron when using ICORELEVEL."
+	},
+	"LMIXTAU": {
+		"prefix": "LMIXTAU",
+		"body": [
+			"LMIXTAU = $1",
+			"$2"
+		],
+		"description": "send the kinetic-energy density through the density mixer as well."
+	},
+	"LUSE_VDW": {
+		"prefix": "LUSE_VDW",
+		"body": [
+			"LUSE_VDW = $1",
+			"$2"
+		],
+		"description": "LUSE_VDW=.TRUE. switches on the use of a nonlocal vdW-DF functional. These functionals depend on the electron density at two points in space and model long-range van der Waals (dispersion) correlation effects."
+	},
+	"IGPAR": {
+		"prefix": "IGPAR",
+		"body": [
+			"IGPAR = $1",
+			"$2"
+		],
+		"description": "This tag specifies the socalled parallel or G  {\\displaystyle {\\mathbf {G}}_{\\parallel }} direction in the integration over the reciprocal space unit cell needed for LCALCPOL."
+	},
+	"I_CONSTRAINED_M": {
+		"prefix": "I_CONSTRAINED_M",
+		"body": [
+			"I_CONSTRAINED_M = $1",
+			"$2"
+		],
+		"description": "I_CONSTRAINED_M switches on the constrained local moments approach."
+	},
+	"CH_LSPEC": {
+		"prefix": "CH_LSPEC",
+		"body": [
+			"CH_LSPEC = $1",
+			"$2"
+		],
+		"description": "This flag controls whether the imaginary part of the dielectric function for a selected core electron is calculated and written to the OUTCAR file or not."
+	},
+	"LWEIGHTED": {
+		"prefix": "LWEIGHTED",
+		"body": [
+			"LWEIGHTED = $1",
+			"$2"
+		],
+		"description": "LWEIGHTED selects the weighted cRPA method."
+	},
+	"ISTART": {
+		"prefix": "ISTART",
+		"body": [
+			"ISTART = $1",
+			"$2"
+		],
+		"description": "ISTART determines whether or not to read the WAVECAR file."
+	},
+	"EDIFF": {
+		"prefix": "EDIFF",
+		"body": [
+			"EDIFF = $1",
+			"$2"
+		],
+		"description": "EDIFF specifies the global break condition for the electronic SC-loop. EDIFF is specified in units of eV."
+	},
+	"EBREAK": {
+		"prefix": "EBREAK",
+		"body": [
+			"EBREAK = $1",
+			"$2"
+		],
+		"description": "EBREAK specifies an absolute stopping criterion for the optimization of an eigenvalue."
+	},
+	"LSPECTRALGW": {
+		"prefix": "LSPECTRALGW",
+		"body": [
+			"LSPECTRALGW = $1",
+			"$2"
+		],
+		"description": "LSPECTRALGW specifies to use the spectral method for calculating the self-energy."
+	},
+	"EVENONLYGW": {
+		"prefix": "EVENONLYGW",
+		"body": [
+			"EVENONLYGW = $1",
+			"$2"
+		],
+		"description": "EVENONLYGW allows to restrict the k-points in the evaluation of response functions (in GW calculations) to even values."
+	},
+	"ISIF": {
+		"prefix": "ISIF",
+		"body": [
+			"ISIF = $1",
+			"$2"
+		],
+		"description": "ISIF determines whether the stress tensor is calculated and which principal degrees-of-freedom are allowed to change in relaxation and molecular dynamics runs."
+	},
+	"LEFG": {
+		"prefix": "LEFG",
+		"body": [
+			"LEFG = $1",
+			"$2"
+		],
+		"description": "The LEFG Computes the Electric Field Gradient at positions of the atomic nuclei."
+	},
+	"ESTOP": {
+		"prefix": "ESTOP",
+		"body": [
+			"ESTOP = $1",
+			"$2"
+		],
+		"description": "ESTOP specifies the stop condition for stochastic MP2."
+	},
+	"LASPH": {
+		"prefix": "LASPH",
+		"body": [
+			"LASPH = $1",
+			"$2"
+		],
+		"description": "include non-spherical contributions related to the gradient of the density in the PAW spheres."
+	},
+	"LDISENTANGLE": {
+		"prefix": "LDISENTANGLE",
+		"body": [
+			"LDISENTANGLE = $1",
+			"$2"
+		],
+		"description": "LDISENTANGLE selects the disentangled cRPA method."
+	},
+	"IPEAD": {
+		"prefix": "IPEAD",
+		"body": [
+			"IPEAD = $1",
+			"$2"
+		],
+		"description": "IPEAD specifies the order of the finite difference stencil used to compute the derivative of the cell-periodic part of the orbitals w.r.t. k, |kunk (LPEAD=.TRUE.), and the derivative of the polarization w.r.t. the orbitals, P/nk| for (LCALCEPS=.TRUE., or EFIELD_PEAD0)."
+	},
+	"EMIN": {
+		"prefix": "EMIN",
+		"body": [
+			"EMIN = $1",
+			"$2"
+		],
+		"description": "EMAX specifies the lower boundary of the energy range for the evaluation of the DOS"
+	},
+	"IEPSILON": {
+		"prefix": "IEPSILON",
+		"body": [
+			"IEPSILON = $1",
+			"$2"
+		],
+		"description": "IEPSILON determines along which Cartesian direction the E field is applied."
+	},
+	"LMODELHF": {
+		"prefix": "LMODELHF",
+		"body": [
+			"LMODELHF = $1",
+			"$2"
+		],
+		"description": "LMODELHF selects dielectric-dependent hybrid functionals with full exchange in the short-range, and AEXX in the long-range."
+	},
+	"LCORR": {
+		"prefix": "LCORR",
+		"body": [
+			"LCORR = $1",
+			"$2"
+		],
+		"description": "Controls whether Harris corrections are calculated or not."
+	},
+	"LVDW_EWALD": {
+		"prefix": "LVDW_EWALD",
+		"body": [
+			"LVDW_EWALD = $1",
+			"$2"
+		],
+		"description": "LVDW_EWALD decides whether lattice summation in E d i s p {\\displaystyle E_{disp}} expression by means of Ewald's summation is computed in the pairwise van der Waals corrections schemes, including DFT-D2, Tkatchenko-Scheffler method, or Tkatchenko-Scheffler method with iterative Hirshfeld partitioning. Available in VASP.5.3.4 and later."
+	},
+	"LMAXMIX": {
+		"prefix": "LMAXMIX",
+		"body": [
+			"LMAXMIX = $1",
+			"$2"
+		],
+		"description": "LMAXMIX controls up to which l-quantum number the one-center PAW charge densities are passed through the charge density mixer and written to the CHGCAR file."
+	},
+	"LKPROJ": {
+		"prefix": "LKPROJ",
+		"body": [
+			"LKPROJ = $1",
+			"$2"
+		],
+		"description": "switches on the k-point projection scheme."
+	},
+	"HFSCREEN": {
+		"prefix": "HFSCREEN",
+		"body": [
+			"HFSCREEN = $1",
+			"$2"
+		],
+		"description": "HFSCREEN (in -1) specifies the range-separation parameter in range separated hybrid functionals."
+	},
+	"LBONE": {
+		"prefix": "LBONE",
+		"body": [
+			"LBONE = $1",
+			"$2"
+		],
+		"description": "LBONE adds the small B-component to the chemical shift tensor."
+	},
+	"INIMIX": {
+		"prefix": "INIMIX",
+		"body": [
+			"INIMIX = $1",
+			"$2"
+		],
+		"description": "INIMIX determines the functional form of the initial mixing matrix in the Broyden scheme (IMIX=4)."
+	},
+	"LPARD": {
+		"prefix": "LPARD",
+		"body": [
+			"LPARD = $1",
+			"$2"
+		],
+		"description": "Determines whether partial (band or k-point decomposed) charge densities are evaluated. See also Band decomposed charge densities."
+	},
+	"LMAXFOCKAE": {
+		"prefix": "LMAXFOCKAE",
+		"body": [
+			"LMAXFOCKAE = $1",
+			"$2"
+		],
+		"description": "LMAXFOCKAE = [integer]"
+	},
+	"LDAUPRINT": {
+		"prefix": "LDAUPRINT",
+		"body": [
+			"LDAUPRINT = $1",
+			"$2"
+		],
+		"description": "LDAUPRINT controls the verbosity of the DFT+U routines."
+	},
+	"GGA_COMPAT": {
+		"prefix": "GGA_COMPAT",
+		"body": [
+			"GGA_COMPAT = $1",
+			"$2"
+		],
+		"description": "This flag restores the full lattice symmetry for gradient corrected functionals."
+	},
+	"ICORELEVEL": {
+		"prefix": "ICORELEVEL",
+		"body": [
+			"ICORELEVEL = $1",
+			"$2"
+		],
+		"description": "ICORELEVEL controls whether the core energies are explicitly calculated or not and how they are calculated."
+	},
+	"LSEPB": {
+		"prefix": "LSEPB",
+		"body": [
+			"LSEPB = $1",
+			"$2"
+		],
+		"description": "Specifies whether the charge density is calculated for every band separately and written to a file PARCHG.nb.* (LSEPB=.TRUE.) or whether charge density is merged for all selected bands and written to the files PARCHG.ALLB.* or PARCHG."
+	},
+	"GGA": {
+		"prefix": "GGA",
+		"body": [
+			"GGA = $1",
+			"$2"
+		],
+		"description": "GGA specifies a LDA or GGA exchange-correlation functional."
+	},
+	"KSPACING": {
+		"prefix": "KSPACING",
+		"body": [
+			"KSPACING = $1",
+			"$2"
+		],
+		"description": "The tag KSPACING determines the number of k points if the KPOINTS file is not present."
+	},
+	"HFRCUT": {
+		"prefix": "HFRCUT",
+		"body": [
+			"HFRCUT = $1",
+			"$2"
+		],
+		"description": "HFRCUT specifies how the Coulomb kernel is approximated at G=0 when the Fock energy and the exchange potential are evaluated."
+	},
+	"IBRION": {
+		"prefix": "IBRION",
+		"body": [
+			"IBRION = $1",
+			"$2"
+		],
+		"description": "IBRION determines how the ions are updated and moved."
+	},
+	"KBLOCK": {
+		"prefix": "KBLOCK",
+		"body": [
+			"KBLOCK = $1",
+			"$2"
+		],
+		"description": "After KBLOCK*NBLOCK ionic steps the averaged pair-correlation function and DOS are written to the files PCDAT and DOSCAR. More details can be found on the page describing the tag NBLOCK."
+	},
+	"ICHARG": {
+		"prefix": "ICHARG",
+		"body": [
+			"ICHARG = $1",
+			"$2"
+		],
+		"description": "ICHARG determines how VASP constructs the initial charge density."
+	},
+	"LDAUL": {
+		"prefix": "LDAUL",
+		"body": [
+			"LDAUL = $1",
+			"$2"
+		],
+		"description": "LDAUL specifies the l {\\displaystyle l} -quantum number for which the on-site interaction is added."
+	},
+	"CUTOFF_SIGMA": {
+		"prefix": "CUTOFF_SIGMA",
+		"body": [
+			"CUTOFF_SIGMA = $1",
+			"$2"
+		],
+		"description": "CUTOFF_SIGMA specifies the broadening  {\\displaystyle \\sigma } in eV for the cutoff function specified by CUTOFF_TYPE."
+	},
+	"LNABLA": {
+		"prefix": "LNABLA",
+		"body": [
+			"LNABLA = $1",
+			"$2"
+		],
+		"description": "LNABLA=.TRUE. evaluates the transversal expression for the frequency dependent dielectric matrix."
+	},
+	"CPARAM": {
+		"prefix": "CPARAM",
+		"body": [
+			"CPARAM = $1",
+			"$2"
+		],
+		"description": "The tag CPARAM allows to specify the value of the parameter C {\\displaystyle C} in the kernel of the nonlocal rVV10 correlation functional."
+	},
+	"CH_SIGMA": {
+		"prefix": "CH_SIGMA",
+		"body": [
+			"CH_SIGMA = $1",
+			"$2"
+		],
+		"description": "This tag specifies the width of the Gaussian broadening in eV of the imaginary dielectric function for a core electron."
+	},
+	"EVENONLY": {
+		"prefix": "EVENONLY",
+		"body": [
+			"EVENONLY = $1",
+			"$2"
+		],
+		"description": "EVENONLY=.TRUE. selects a subset of k-points for the representation of the Fock exchange potential, with C1=C2=C3=1, and n1+n2+n3 even."
+	},
+	"LWANNIER90": {
+		"prefix": "LWANNIER90",
+		"body": [
+			"LWANNIER90 = $1",
+			"$2"
+		],
+		"description": "LWANNIER90=.TRUE. switches on the interface between VASP and WANNIER90."
+	},
+	"EPSILON": {
+		"prefix": "EPSILON",
+		"body": [
+			"EPSILON = $1",
+			"$2"
+		],
+		"description": "EPSILON sets the dielectric constant of the medium."
+	},
+	"IWAVPR": {
+		"prefix": "IWAVPR",
+		"body": [
+			"IWAVPR = $1",
+			"$2"
+		],
+		"description": "IWAVPR determines how orbitals and/or charge densities are extrapolated from one ionic configuration to the next configuration."
+	},
+	"LSCALU": {
+		"prefix": "LSCALU",
+		"body": [
+			"LSCALU = $1",
+			"$2"
+		],
+		"description": "LSCALU switches on the parallel LU decomposition (using scaLAPACK) in the orthonormalization of the wave functions."
+	},
+	"BMIX_MAG": {
+		"prefix": "BMIX_MAG",
+		"body": [
+			"BMIX_MAG = $1",
+			"$2"
+		],
+		"description": "BMIX_MAG sets the cutoff wave vector for Kerker mixing scheme[1] (IMIX=1 and/or INIMIX=1) for the magnetization density."
+	},
+	"ALDAC": {
+		"prefix": "ALDAC",
+		"body": [
+			"ALDAC = $1",
+			"$2"
+		],
+		"description": "ALDAC specifies the fraction of LDA correlation in a Hartree-Fock/DFT hybrid functional type calculation."
+	},
+	"LCHARG": {
+		"prefix": "LCHARG",
+		"body": [
+			"LCHARG = $1",
+			"$2"
+		],
+		"description": "LCHARG determines whether the charge densities (files CHGCAR and CHG) are written."
+	},
+	"EMAX": {
+		"prefix": "EMAX",
+		"body": [
+			"EMAX = $1",
+			"$2"
+		],
+		"description": "EMAX specifies the upper boundary of the energy range for the evaluation of the DOS."
+	},
+	"ENINI": {
+		"prefix": "ENINI",
+		"body": [
+			"ENINI = $1",
+			"$2"
+		],
+		"description": "ENINI controls the cutoff during the initial (steepest descent) phase for IALGO=48."
+	},
+	"LDAUU": {
+		"prefix": "LDAUU",
+		"body": [
+			"LDAUU = $1",
+			"$2"
+		],
+		"description": "LDAUU specifies the strength of the effective on-site Coulomb interactions."
+	},
+	"LREAL": {
+		"prefix": "LREAL",
+		"body": [
+			"LREAL = $1",
+			"$2"
+		],
+		"description": "LREAL determines whether the projection operators are evaluated in real-space or in reciprocal space."
+	},
+	"FINDIFF": {
+		"prefix": "FINDIFF",
+		"body": [
+			"FINDIFF = $1",
+			"$2"
+		],
+		"description": "The flag DIMER_DIST defines whether a forward (FINDIFF=1) or a central (FINDIFF=2) difference formula for the numerical differentiation to compute the curvature along the dimer direction is used in the Improved Dimer Method."
+	},
+	"LMAXTAU": {
+		"prefix": "LMAXTAU",
+		"body": [
+			"LMAXTAU = $1",
+			"$2"
+		],
+		"description": "LMAXTAU is the maximum l-quantum number included in the PAW one-center expansion of the kinetic energy density."
+	},
+	"LIBXC2": {
+		"prefix": "LIBXC2",
+		"body": [
+			"LIBXC2 = $1",
+			"$2"
+		],
+		"description": "LIBXC2 specifies the correlation functional from the library of exchange-correlation functionals Libxc[1][2][3] that one wants to use. LIBXC2 can be used only if the functional specified with LIBXC1 corresponds to only exchange and not to exchange and correlation."
+	},
+	"IVDW": {
+		"prefix": "IVDW",
+		"body": [
+			"IVDW = $1",
+			"$2"
+		],
+		"description": "IVDW specifies a vdW (dispersion) correction."
+	},
+	"LHARTREE": {
+		"prefix": "LHARTREE",
+		"body": [
+			"LHARTREE = $1",
+			"$2"
+		],
+		"description": "Controls whether the bubble diagrams are included in the BSE calculation."
+	},
+	"LPHON_READ_FORCE_CONSTANTS": {
+		"prefix": "LPHON_READ_FORCE_CONSTANTS",
+		"body": [
+			"LPHON_READ_FORCE_CONSTANTS = $1",
+			"$2"
+		],
+		"description": "LPHON_READ_FORCE_CONSTANTS read the force constants from a vaspin.h5 file containing the force constants computed with a previous VASP run."
+	},
+	"LVHAR": {
+		"prefix": "LVHAR",
+		"body": [
+			"LVHAR = $1",
+			"$2"
+		],
+		"description": "(for VASP.5.2.12 and higher) The potential V LOCPOT ( r ) {\\displaystyle V_{\\text{LOCPOT}}(\\mathbf {r} )} (in eV) written to the LOCPOT file is"
+	},
+	"INCREM": {
+		"prefix": "INCREM",
+		"body": [
+			"INCREM = $1",
+			"$2"
+		],
+		"description": "INCREM controls the transformation velocity in the slow-growth approach (in case VASP was compiled with -Dtbdyn)."
+	},
+	"LSORBIT": {
+		"prefix": "LSORBIT",
+		"body": [
+			"LSORBIT = $1",
+			"$2"
+		],
+		"description": "LSORBIT specifies whether spin-orbit coupling is taken into account."
+	},
+	"LSELFENERGY": {
+		"prefix": "LSELFENERGY",
+		"body": [
+			"LSELFENERGY = $1",
+			"$2"
+		],
+		"description": "Controls whether the frequency-dependent self-energy is calculated or not."
+	},
+	"LUSENCCL": {
+		"prefix": "LUSENCCL",
+		"body": [
+			"LUSENCCL = $1",
+			"$2"
+		],
+		"description": "LUSENCCL allows deactivating the NVIDIA Collective Communications Library (NCCL) during runtime when the code was compiled with the -DUSENCCL option."
+	},
+	"LKPOINTS_OPT": {
+		"prefix": "LKPOINTS_OPT",
+		"body": [
+			"LKPOINTS_OPT = $1",
+			"$2"
+		],
+		"description": "LKPOINTS_OPT controlls whether VASP reads the KPOINTS_OPT file."
+	},
+	"DEPER": {
+		"prefix": "DEPER",
+		"body": [
+			"DEPER = $1",
+			"$2"
+		],
+		"description": "DEPER specifies a relative stopping criterion for the optimization of an eigenvalue."
+	},
+	"APACO": {
+		"prefix": "APACO",
+		"body": [
+			"APACO = $1",
+			"$2"
+		],
+		"description": "APACO sets the maximum distance in the evaluation of the pair-correlation function (in )."
+	},
+	"LBERRY": {
+		"prefix": "LBERRY",
+		"body": [
+			"LBERRY = $1",
+			"$2"
+		],
+		"description": "This tag is used in the the evaluation of the Berry phase expression for the electronic polarization of an insulating system."
+	},
+	"IMIX": {
+		"prefix": "IMIX",
+		"body": [
+			"IMIX = $1",
+			"$2"
+		],
+		"description": "IMIX specifies the type of density mixing."
+	},
+	"LPLANE": {
+		"prefix": "LPLANE",
+		"body": [
+			"LPLANE = $1",
+			"$2"
+		],
+		"description": "LPLANE switches on the plane-wise data distribution in real space."
+	},
+	"LTHOMAS": {
+		"prefix": "LTHOMAS",
+		"body": [
+			"LTHOMAS = $1",
+			"$2"
+		],
+		"description": "LTHOMAS selects a decomposition of the exchange functional based on Thomas-Fermi screening."
+	},
+	"HFLMAX": {
+		"prefix": "HFLMAX",
+		"body": [
+			"HFLMAX = $1",
+			"$2"
+		],
+		"description": "To be compatible w.r.t. old releases, VASP also reads the flag HFLMAX to the same effect as LMAXFOCK."
+	},
+	"KPAR": {
+		"prefix": "KPAR",
+		"body": [
+			"KPAR = $1",
+			"$2"
+		],
+		"description": "KPAR determines the number of k-points that are to be treated in parallel (available as of VASP.5.3.2). Also, KPAR is used as parallelization tag for Laplace transformed MP2 calculations."
+	},
+	"FERWE": {
+		"prefix": "FERWE",
+		"body": [
+			"FERWE = $1",
+			"$2"
+		],
+		"description": "FERWE sets the occupancies of the states for ISMEAR=-2."
+	},
+	"CSHIFT": {
+		"prefix": "CSHIFT",
+		"body": [
+			"CSHIFT = $1",
+			"$2"
+		],
+		"description": "CSHIFT sets the (small) complex shift  in the Kramers-Kronig transformation and Hilbert transformation in linear response and GW calculations, respectively."
+	},
+	"ENCUTFOCK": {
+		"prefix": "ENCUTFOCK",
+		"body": [
+			"ENCUTFOCK = $1",
+			"$2"
+		],
+		"description": "Default none"
+	},
+	"LORBIT": {
+		"prefix": "LORBIT",
+		"body": [
+			"LORBIT = $1",
+			"$2"
+		],
+		"description": "LORBIT, together with an appropriate RWIGS, determines whether the PROCAR or PROOUT files are written."
+	},
+	"LMONO": {
+		"prefix": "LMONO",
+		"body": [
+			"LMONO = $1",
+			"$2"
+		],
+		"description": "LMONO switches on monopole-monopole corrections for the total energy."
+	},
+	"IALGO": {
+		"prefix": "IALGO",
+		"body": [
+			"IALGO = $1",
+			"$2"
+		],
+		"description": "IALGO selects the algorithm used to optimize the orbitals."
+	},
+	"LIBXC1": {
+		"prefix": "LIBXC1",
+		"body": [
+			"LIBXC1 = $1",
+			"$2"
+		],
+		"description": "LIBXC1 specifies the exchange or exchange-correlation functional from the library of exchange-correlation functionals Libxc[1][2][3] that one wants to use. If LIBXC1 corresponds to an exchange functional, then it can be used in combination with LIBXC2 for the correlation functional."
+	},
+	"LRPAFORCE": {
+		"prefix": "LRPAFORCE",
+		"body": [
+			"LRPAFORCE = $1",
+			"$2"
+		],
+		"description": "LRPAFORCE=.TRUE. calculates forces in the random-phase approximation (RPA)."
+	},
+	"LAECHG": {
+		"prefix": "LAECHG",
+		"body": [
+			"LAECHG = $1",
+			"$2"
+		],
+		"description": "when LAECHG=.TRUE. the all-electron charge density will be reconstructed explicitly and written to files."
+	},
+	"LHYPERFINE": {
+		"prefix": "LHYPERFINE",
+		"body": [
+			"LHYPERFINE = $1",
+			"$2"
+		],
+		"description": "compute the hyperfine tensors at the atomic sites (available as of vasp.5.3.2)."
+	},
+	"LWANNIER90_RUN": {
+		"prefix": "LWANNIER90_RUN",
+		"body": [
+			"LWANNIER90_RUN = $1",
+			"$2"
+		],
+		"description": "LWANNIER90_RUN executes wannier_setup (see LWANNIER90=.TRUE.) and subsequently runs WANNIER90 in library mode (wannier_run)."
+	},
+	"LAMBDA": {
+		"prefix": "LAMBDA",
+		"body": [
+			"LAMBDA = $1",
+			"$2"
+		],
+		"description": "LAMBDA sets the weight with which the penalty terms of the constrained local moment approach enter into the total energy expression and the Hamiltonian."
+	},
+	"CMBJA": {
+		"prefix": "CMBJA",
+		"body": [
+			"CMBJA = $1",
+			"$2"
+		],
+		"description": "sets the  {\\displaystyle \\alpha } parameter in the MBJ potential."
+	},
+	"LCHIMAG": {
+		"prefix": "LCHIMAG",
+		"body": [
+			"LCHIMAG = $1",
+			"$2"
+		],
+		"description": "calculate the chemical shifts by means of linear response."
+	},
+	"LDIPOL": {
+		"prefix": "LDIPOL",
+		"body": [
+			"LDIPOL = $1",
+			"$2"
+		],
+		"description": "LDIPOL switches on corrections to the potential and forces in VASP. Can be applied for charged molecules and molecules and slabs with a net dipole moment."
+	},
+	"EFIELD": {
+		"prefix": "EFIELD",
+		"body": [
+			"EFIELD = $1",
+			"$2"
+		],
+		"description": "EFIELD controls the magnitude of the applied electric force field."
+	},
+	"LFOCKAEDFT": {
+		"prefix": "LFOCKAEDFT",
+		"body": [
+			"LFOCKAEDFT = $1",
+			"$2"
+		],
+		"description": "LFOCKAEDFT forces VASP to use the same charge augmentation for the Hartree and DFT exchange correlation part as is used in the Fock exchange and the many body beyond DFT methods, such as RPA, MP2 etc."
+	},
+	"LPHON_DISPERSION": {
+		"prefix": "LPHON_DISPERSION",
+		"body": [
+			"LPHON_DISPERSION = $1",
+			"$2"
+		],
+		"description": "LPHON_DISPERSION requests the calculation of the phonon dispersion along the q-point path supplied in file QPOINTS (same format as KPOINTS)."
+	},
+	"DQ": {
+		"prefix": "DQ",
+		"body": [
+			"DQ = $1",
+			"$2"
+		],
+		"description": "step size for the finite difference k-space derivative in the linear response calculation of chemical shifts."
+	},
+	"ENAUG": {
+		"prefix": "ENAUG",
+		"body": [
+			"ENAUG = $1",
+			"$2"
+		],
+		"description": "ENAUG specifies the cut-off energy of the plane wave representation of the augmentation charges in eV."
+	},
+	"IDIPOL": {
+		"prefix": "IDIPOL",
+		"body": [
+			"IDIPOL = $1",
+			"$2"
+		],
+		"description": "IDIPOL switches on monopole/dipole and quadrupole corrections to the total energy."
+	},
+	"LANGEVIN_GAMMA": {
+		"prefix": "LANGEVIN_GAMMA",
+		"body": [
+			"LANGEVIN_GAMMA = $1",
+			"$2"
+		],
+		"description": "LANGEVIN_GAMMA specifies the friction coefficients (in ps-1) for atomic degrees-of-freedom when using a Langevin thermostat (in case VASP was compiled with -Dtbdyn)."
+	},
+	"ISMEAR": {
+		"prefix": "ISMEAR",
+		"body": [
+			"ISMEAR = $1",
+			"$2"
+		],
+		"description": "ISMEAR determines how the partial occupancies fnk are set for each orbital. SIGMA determines the width of the smearing in eV."
+	},
+	"LTBOUNDLIBXC": {
+		"prefix": "LTBOUNDLIBXC",
+		"body": [
+			"LTBOUNDLIBXC = $1",
+			"$2"
+		],
+		"description": "LTBOUNDLIBXC specifies whether or not the lower bound for the Kohn-Sham kinetic-energy density   {\\displaystyle \\tau _{\\sigma }} (   W <   {\\displaystyle \\tau _{\\sigma }^{\\textrm {W}}<\\tau _{\\sigma }} ) is enforced before   {\\displaystyle \\tau _{\\sigma }} is used in a meta-GGA functional from Libxc."
+	},
+	"LTEMPER": {
+		"prefix": "LTEMPER",
+		"body": [
+			"LTEMPER = $1",
+			"$2"
+		],
+		"description": "LTEMPER specified whether parallel tempering is used. The flag must be used in combination with IMAGES."
+	},
+	"CMBJ": {
+		"prefix": "CMBJ",
+		"body": [
+			"CMBJ = $1",
+			"$2"
+		],
+		"description": "defines the c {\\displaystyle c} parameter in the MBJ potential."
+	},
+	"EFIELD_PEAD": {
+		"prefix": "EFIELD_PEAD",
+		"body": [
+			"EFIELD_PEAD = $1",
+			"$2"
+		],
+		"description": "EFIELD_PEAD specifies the homogeneous electric force field in the electric enthalpy functional used to compute the self-consistent response to finite electric fields. EFIELD_PEAD is specified in units of eV/."
+	},
+	"INIWAV": {
+		"prefix": "INIWAV",
+		"body": [
+			"INIWAV = $1",
+			"$2"
+		],
+		"description": "INIWAV specifies how to set up the initial orbitals in case ISTART=0."
+	},
+	"LRPA": {
+		"prefix": "LRPA",
+		"body": [
+			"LRPA = $1",
+			"$2"
+		],
+		"description": "LRPA=.TRUE. includes local field effect on the Hartree level only."
+	},
+	"LH5": {
+		"prefix": "LH5",
+		"body": [
+			"LH5 = $1",
+			"$2"
+		],
+		"description": "LH5 determines whether the output is written to the legacy files (CHGCAR, CHG, WAVECAR) or the vaspwave.h5 file."
+	},
+	"LFINITE_TEMPERATURE": {
+		"prefix": "LFINITE_TEMPERATURE",
+		"body": [
+			"LFINITE_TEMPERATURE = $1",
+			"$2"
+		],
+		"description": "LFINITE_TEMPERATURE switches on the finite-temperature formalism of many-body perturbation theory for adiabatic-connection-fluctuation-dissipation-theorem (ACFDT)/GW calculations."
+	},
+	"CUTOFF_MU": {
+		"prefix": "CUTOFF_MU",
+		"body": [
+			"CUTOFF_MU = $1",
+			"$2"
+		],
+		"description": "CUTOFF_MU specifies the cutoff energy  {\\displaystyle \\mu } in eV for the function specified by CUTOFF_MU."
+	},
+	"AMIX_MAG": {
+		"prefix": "AMIX_MAG",
+		"body": [
+			"AMIX_MAG = $1",
+			"$2"
+		],
+		"description": "AMIX_MAG linear mixing parameter for the magnetization density."
+	},
+	"BPARAM": {
+		"prefix": "BPARAM",
+		"body": [
+			"BPARAM = $1",
+			"$2"
+		],
+		"description": "The tag BPARAM specifies the value of the parameter b {\\displaystyle b} in the kernel of the nonlocal rVV10 correlation functional."
+	},
+	"LMAXFOCK": {
+		"prefix": "LMAXFOCK",
+		"body": [
+			"LMAXFOCK = $1",
+			"$2"
+		],
+		"description": "LMAXFOCK sets the maximum angular momentum quantum number L for the augmentation of charge densities in Hartree-Fock type routines."
+	},
+	"LVDW_ONECELL": {
+		"prefix": "LVDW_ONECELL",
+		"body": [
+			"LVDW_ONECELL = $1",
+			"$2"
+		],
+		"description": "LVDW_ONECELL can be used to disable vdW interaction with mirror image in X Y Z direction. This is advisable for molecular calculations in the gas phase. In all other cases, use the default."
+	},
+	"ENCUTGW": {
+		"prefix": "ENCUTGW",
+		"body": [
+			"ENCUTGW = $1",
+			"$2"
+		],
+		"description": "The tag ENCUTGW sets the energy cutoff for the response function. It controls the basis set for the response functions in exactly the same manner as ENCUT does for the orbitals."
+	},
+	"INCAR": {
+		"prefix": "INCAR",
+		"body": [
+			"INCAR = $1",
+			"$2"
+		],
+		"description": "The INCAR file is a tagged format free-ASCII file. That is, each statement follows a tag = values syntax. Typically, each line contains a single statement, but it is possible to combine multiple statements on a single line, separating them by a semicolon ;, e.g.,"
+	},
+	"LSCK": {
+		"prefix": "LSCK",
+		"body": [
+			"LSCK = $1",
+			"$2"
+		],
+		"description": "LSCK=True switches on the use of the squeezed Coulomb kernel."
+	},
+	"ANDERSEN_PROB": {
+		"prefix": "ANDERSEN_PROB",
+		"body": [
+			"ANDERSEN_PROB = $1",
+			"$2"
+		],
+		"description": "ANDERSEN_PROB sets the collision probability for the Anderson thermostat (in case VASP was compiled with -Dtbdyn)."
+	},
+	"BMIX": {
+		"prefix": "BMIX",
+		"body": [
+			"BMIX = $1",
+			"$2"
+		],
+		"description": "BMIX sets the cutoff wave vector for Kerker mixing scheme[1] (IMIX=1 and/or INIMIX=1)."
+	},
+	"CLZ": {
+		"prefix": "CLZ",
+		"body": [
+			"CLZ = $1",
+			"$2"
+		],
+		"description": "CLZ selects the electron count of the excited electron when using ICORELEVEL."
+	},
+	"LDAUTYPE": {
+		"prefix": "LDAUTYPE",
+		"body": [
+			"LDAUTYPE = $1",
+			"$2"
+		],
+		"description": "LDAUTYPE specifies the DFT+U variant that will be used."
+	},
+	"LPEAD": {
+		"prefix": "LPEAD",
+		"body": [
+			"LPEAD = $1",
+			"$2"
+		],
+		"description": "for LPEAD=.TRUE., the derivative of the cell-periodic part of the orbitals w.r.t. k, |kunk, is calculated using finite differences."
+	},
+	"LSMP2LT": {
+		"prefix": "LSMP2LT",
+		"body": [
+			"LSMP2LT = $1",
+			"$2"
+		],
+		"description": "LSMP2LT selects a stochastic Laplace transformed MP2 algorithm."
+	},
+	"HILLS_BIN": {
+		"prefix": "HILLS_BIN",
+		"body": [
+			"HILLS_BIN = $1",
+			"$2"
+		],
+		"description": "HILLS_BIN sets the number of steps after which the bias potential is updated in a metadynamics run (in case VASP was compiled with -Dtbdyn)."
+	},
+	"HILLS_H": {
+		"prefix": "HILLS_H",
+		"body": [
+			"HILLS_H = $1",
+			"$2"
+		],
+		"description": "HILLS_H specifies the height of the Gaussian hill (in eV) used in metadynamics (in case VASP was compiled with -Dtbdyn)."
+	},
+	"LELF": {
+		"prefix": "LELF",
+		"body": [
+			"LELF = $1",
+			"$2"
+		],
+		"description": "LELF determines whether to create an ELFCAR file or not."
+	},
+	"LVDWSCS": {
+		"prefix": "LVDWSCS",
+		"body": [
+			"LVDWSCS = $1",
+			"$2"
+		],
+		"description": "LVDWSCS activates the self-consistent screening in Tkatchenko-Scheffler method."
+	},
+	"LLRAUG": {
+		"prefix": "LLRAUG",
+		"body": [
+			"LLRAUG = $1",
+			"$2"
+		],
+		"description": "LLRAUG calculates the two-center contributions to the chemical shift tensor."
+	},
+	"EINT": {
+		"prefix": "EINT",
+		"body": [
+			"EINT = $1",
+			"$2"
+		],
+		"description": "Specifies the energy range of the bands that are used for the evaluation of the partial charge density needed in Band decomposed charge densities. Check also NBMOD and IBAND."
+	},
+	"LSUBROT": {
+		"prefix": "LSUBROT",
+		"body": [
+			"LSUBROT = $1",
+			"$2"
+		],
+		"description": "This flag can be set for hybrid functionals (HF-type calculations). LSUBROT determines whether an optimal rotation matrix between the occupied and unoccupied block is sought, when a direct optimization of the energy functional is performed (i.e. ALGO=All | Damped). The corresponding algorithm is unpublished. LSUBROT =.FALSE. is the standard algorithm, in which the rotation matrix between occupied and unoccupied orbitals is determined essentially using Loewdin perturbation theory, as for instance explained in Ref. [1]. For LSUBROT =.TRUE. the rotation matrix is instead optimized by performing a few standard SCF steps, in which the orbitals are kept fixed, but rotations between the occupied and unoccupied manifold are allowed. Once satisfactory convergence has been reached, the optimized density matrix (rotation matrix between occupied and unoccupied block) is passed back to the direct optimization routine and a rotation along the suggested direction is performed alongside an update of the orbitals. This generally speeds up calculations for small gap systems as well as metals. However, in rare cases, we have observed instabilities, so be careful when selecting LSUBROT =.TRUE."
+	},
+	"ANTIRES": {
+		"prefix": "ANTIRES",
+		"body": [
+			"ANTIRES = $1",
+			"$2"
+		],
+		"description": "ANTIRES determines whether the Tamm-Dancoff approximation is used or not."
+	},
+	"LMP2LT": {
+		"prefix": "LMP2LT",
+		"body": [
+			"LMP2LT = $1",
+			"$2"
+		],
+		"description": "LMP2LT selects a Laplace transformed MP2 algorithm."
+	},
+	"KGAMMA": {
+		"prefix": "KGAMMA",
+		"body": [
+			"KGAMMA = $1",
+			"$2"
+		],
+		"description": "Determines whether the k points (specified by the KSPACING tag ) include (KGAMMA=.TRUE.) the  {\\displaystyle \\Gamma } point."
+	},
+	"LMAXPAW": {
+		"prefix": "LMAXPAW",
+		"body": [
+			"LMAXPAW = $1",
+			"$2"
+		],
+		"description": "LMAXPAW sets the maximum l -quantum number for the evaluation of the one-center terms on the radial support grids in the PAW method."
+	},
+	"LSCALAPACK": {
+		"prefix": "LSCALAPACK",
+		"body": [
+			"LSCALAPACK = $1",
+			"$2"
+		],
+		"description": "LSCALAPACK controls the use of scaLAPACK."
+	},
+	"ENCUT": {
+		"prefix": "ENCUT",
+		"body": [
+			"ENCUT = $1",
+			"$2"
+		],
+		"description": "ENCUT specifies the cutoff energy for the plane-wave-basis set in eV."
+	},
+	"LCALCPOL": {
+		"prefix": "LCALCPOL",
+		"body": [
+			"LCALCPOL = $1",
+			"$2"
+		],
+		"description": "LCALCPOL=.TRUE. switches on the evaluation of the Berry phase expressions for the macroscopic electronic polarization in accordance with the so-called Modern Theory of Polarization."
+	},
+	"LNONCOLLINEAR": {
+		"prefix": "LNONCOLLINEAR",
+		"body": [
+			"LNONCOLLINEAR = $1",
+			"$2"
+		],
+		"description": "LNONCOLLINEAR specifies whether fully non-collinear magnetic calculations are performed."
+	},
+	"CH_NEDOS": {
+		"prefix": "CH_NEDOS",
+		"body": [
+			"CH_NEDOS = $1",
+			"$2"
+		],
+		"description": "This tag specifies the number of frequency (energy) grid points on the x-axis in the calculation of the dielectric function for XAS spectra."
+	},
+	"ISYM": {
+		"prefix": "ISYM",
+		"body": [
+			"ISYM = $1",
+			"$2"
+		],
+		"description": "ISYM determines the way VASP treats symmetry."
+	},
+	"ICHIBARE": {
+		"prefix": "ICHIBARE",
+		"body": [
+			"ICHIBARE = $1",
+			"$2"
+		],
+		"description": "determines the order of the finite difference stencil used to calculate the magnetic susceptibility."
+	},
+	"LDIAG": {
+		"prefix": "LDIAG",
+		"body": [
+			"LDIAG = $1",
+			"$2"
+		],
+		"description": "This tag determines whether a subspace diagonalization is performed or not within the main algorithm selected by ALGO or IALGO."
+	},
+	"LOCPROJ": {
+		"prefix": "LOCPROJ",
+		"body": [
+			"LOCPROJ = $1",
+			"$2"
+		],
+		"description": "The LOCPROJ tag specifies local functions on which the orbitals are projected. These projections are written to the PROJCAR, LOCPROJ, and vasprun.xml files."
+	},
+	"LFOCKACE": {
+		"prefix": "LFOCKACE",
+		"body": [
+			"LFOCKACE = $1",
+			"$2"
+		],
+		"description": "LFOCKACE determines whether the Adaptively Compressed Exchange Operator is used.[1]"
+	},
+	"LATTICE_CONSTRAINTS": {
+		"prefix": "LATTICE_CONSTRAINTS",
+		"body": [
+			"LATTICE_CONSTRAINTS = $1",
+			"$2"
+		],
+		"description": "The tag LATTICE_CONSTRAINTS determines whether the lattice dynamics are released (LATTICE_CONSTRAINTS=.TRUE.) in the given directions in molecular-dynamics calculations (IBRION=0)."
+	},
+	"ENCUTGWSOFT": {
+		"prefix": "ENCUTGWSOFT",
+		"body": [
+			"ENCUTGWSOFT = $1",
+			"$2"
+		],
+		"description": "The flag ENCUTGWSOFT sets the energy cutoff for response function, such that it allows to truncate the Coulomb kernel slowly between the energy specified by ENCUTGWSOFT and ENCUTGW using a cosine window function."
+	},
+	"AGGAX": {
+		"prefix": "AGGAX",
+		"body": [
+			"AGGAX = $1",
+			"$2"
+		],
+		"description": "AGGAX specifies the fraction of gradient corrections to the exchange in a Hartree-Fock/DFT hybrid functional type calculation."
+	},
+	"LSCSGRAD": {
+		"prefix": "LSCSGRAD",
+		"body": [
+			"LSCSGRAD = $1",
+			"$2"
+		],
+		"description": "LSCSGRAD decides whether to compute gradients in the calculation of the MBD dispersion energy or the SCS contribution."
+	},
+	"FOCKCORR": {
+		"prefix": "FOCKCORR",
+		"body": [
+			"FOCKCORR = $1",
+			"$2"
+		],
+		"description": "The tag FOCKCORR determines how the Coulomb convergence corrections are applied."
+	},
+	"LSPECTRAL": {
+		"prefix": "LSPECTRAL",
+		"body": [
+			"LSPECTRAL = $1",
+			"$2"
+		],
+		"description": "LSPECTRAL specifies to use the spectral method."
+	},
+	"LVDWEXPANSION": {
+		"prefix": "LVDWEXPANSION",
+		"body": [
+			"LVDWEXPANSION = $1",
+			"$2"
+		],
+		"description": "LVDWEXPANSION decides whether to write the two- to six- body contributions to MBD dispersion energy in the OUTCAR file."
+	},
+	"CLNT": {
+		"prefix": "CLNT",
+		"body": [
+			"CLNT = $1",
+			"$2"
+		],
+		"description": "CLNT selects for which species the core levels are calculated using the tag ICORELEVEL."
+	},
+	"LADDER": {
+		"prefix": "LADDER",
+		"body": [
+			"LADDER = $1",
+			"$2"
+		],
+		"description": "Controls whether the ladder diagrams are included in the BSE calculation. Note that the default for LRPA and therefore LADDER is somewhat convoluted; so better to always double-check the OUTCAR file whether VASP behaves as expected. Generally, VASP will select ladder diagrams whenever this seems reasonable. This is for instance the case for ALGO='BSE' or 'TDHF' calculations."
+	},
+	"EDIFFG": {
+		"prefix": "EDIFFG",
+		"body": [
+			"EDIFFG = $1",
+			"$2"
+		],
+		"description": "EDIFFG defines the break condition for the ionic relaxation loop."
+	},
+	"LWAVE": {
+		"prefix": "LWAVE",
+		"body": [
+			"LWAVE = $1",
+			"$2"
+		],
+		"description": "LWAVE determines whether the wavefunctions are written to the WAVECAR file at the end of a run."
+	},
+	"AEXX": {
+		"prefix": "AEXX",
+		"body": [
+			"AEXX = $1",
+			"$2"
+		],
+		"description": "AEXX specifies the fraction of exact exchange in a Hartree-Fock-type/hybrid-functional calculation."
+	},
+	"ISPIN": {
+		"prefix": "ISPIN",
+		"body": [
+			"ISPIN = $1",
+			"$2"
+		],
+		"description": "ISPIN specifies spin polarization."
+	},
+	"AMIX": {
+		"prefix": "AMIX",
+		"body": [
+			"AMIX = $1",
+			"$2"
+		],
+		"description": "AMIX specifies the linear mixing parameter."
+	},
+	"IMAGES": {
+		"prefix": "IMAGES",
+		"body": [
+			"IMAGES = $1",
+			"$2"
+		],
+		"description": "IMAGES defines how many instances of VASP are started. These instances execute VASP calculations in separate directories 01, 02, 03, etc. This flag is used to support elastic band calculations, parallel tempering, thermodynamic integration as well as other scenaria where a simultaneous calculation of several VASP instances is required."
+	},
+	"LORBMOM": {
+		"prefix": "LORBMOM",
+		"body": [
+			"LORBMOM = $1",
+			"$2"
+		],
+		"description": "LORBMOM specifies whether the orbital moments are written out or not (in a calculation using LSORBIT=.TRUE.)."
+	},
+	"LDAU": {
+		"prefix": "LDAU",
+		"body": [
+			"LDAU = $1",
+			"$2"
+		],
+		"description": "LDAU=.TRUE. switches on DFT+U."
+	},
+	"CMBJB": {
+		"prefix": "CMBJB",
+		"body": [
+			"CMBJB = $1",
+			"$2"
+		],
+		"description": "sets the  {\\displaystyle \\beta } parameter in the MBJ potential."
+	},
+	"HFALPHA": {
+		"prefix": "HFALPHA",
+		"body": [
+			"HFALPHA = $1",
+			"$2"
+		],
+		"description": "HFALPHA sets the decay constant used in the method of Massida, Posternak, and Baldereschi, which is activated by HFRCUT=0."
+	},
+	"LCALCEPS": {
+		"prefix": "LCALCEPS",
+		"body": [
+			"LCALCEPS = $1",
+			"$2"
+		],
+		"description": "for LCALCEPS=.TRUE. the macroscopic ion-clamped static dielectric tensor, Born effective charge tensors, and the ion-clamped piezoelectric tensor of the system are determined from the response to finite electric fields."
+	},
+	"LTRIPLET": {
+		"prefix": "LTRIPLET",
+		"body": [
+			"LTRIPLET = $1",
+			"$2"
+		],
+		"description": "LTRIPLET selects a triplet ansatz for Bethe-Salpeter-equations (BSE) calculations. This is synonymous to LHARTREE = .FALSE."
+	},
+	"KPOINTS_OPT_NKBATCH": {
+		"prefix": "KPOINTS_OPT_NKBATCH",
+		"body": [
+			"KPOINTS_OPT_NKBATCH = $1",
+			"$2"
+		],
+		"description": "Default KPOINTS_OPT_NKBATCH = Number of k-points in the irreducible Brillouin zone of the self-consistent calculation."
+	},
+	"LASYNC": {
+		"prefix": "LASYNC",
+		"body": [
+			"LASYNC = $1",
+			"$2"
+		],
+		"description": "Controls the overlap in communication."
+	},
+	"IBAND": {
+		"prefix": "IBAND",
+		"body": [
+			"IBAND = $1",
+			"$2"
+		],
+		"description": "Controls which bands are used in the calculation of Band decomposed charge densities. Check also NBMOD and EINT."
+	},
+	"LWAVEH5": {
+		"prefix": "LWAVEH5",
+		"body": [
+			"LWAVEH5 = $1",
+			"$2"
+		],
+		"description": "LWAVEH5 determines whether the wavefunctions are written to vaspwave.h5 file at the end of a run."
+	},
+	"LVTOT": {
+		"prefix": "LVTOT",
+		"body": [
+			"LVTOT = $1",
+			"$2"
+		],
+		"description": "LVTOT determines whether the total local potential V LOCPOT ( r ) {\\displaystyle V_{\\text{LOCPOT}}(\\mathbf {r} )} (in eV) is written to the LOCPOT file"
+	},
+	"LPHON_POLAR": {
+		"prefix": "LPHON_POLAR",
+		"body": [
+			"LPHON_POLAR = $1",
+			"$2"
+		],
+		"description": "LPHON_POLAR includes dipole-dipole corrections in the computation of the phonon dispersion. For this mode, PHON_DIELECTRIC and PHON_BORN_CHARGES must also be set."
+	},
+	"AGGAC": {
+		"prefix": "AGGAC",
+		"body": [
+			"AGGAC = $1",
+			"$2"
+		],
+		"description": "AGGAC specifies the fraction of gradient corrections to the correlation in a Hartree-Fock/DFT hybrid functional type calculation."
+	},
+	"ADDGRID": {
+		"prefix": "ADDGRID",
+		"body": [
+			"ADDGRID = $1",
+			"$2"
+		],
+		"description": "ADDGRID determines whether an additional support grid is used for the evaluation of the augmentation charges."
+	},
+	"CUTOFF_TYPE": {
+		"prefix": "CUTOFF_TYPE",
+		"body": [
+			"CUTOFF_TYPE = $1",
+			"$2"
+		],
+		"description": "CUTOFF_TYPE chooses the type of cutoff function to be used before performing the singular-value decomposition (SVD) of the initial projections matrix."
+	},
+	"DIPOL": {
+		"prefix": "DIPOL",
+		"body": [
+			"DIPOL = $1",
+			"$2"
+		],
+		"description": "specifies the center of the cell in direct lattice coordinates with respect to which the total dipole-moment in the cell is calculated."
+	},
+	"HITOLER": {
+		"prefix": "HITOLER",
+		"body": [
+			"HITOLER = $1",
+			"$2"
+		],
+		"description": "HITOLER specifies the convergence parameter for the iterative Hirschfeld partitioning in the Tkatchenko-Scheffler method."
+	},
+	"KPOINT_BSE": {
+		"prefix": "KPOINT_BSE",
+		"body": [
+			"KPOINT_BSE = $1",
+			"$2"
+		],
+		"description": "KPOINT_BSE specifies the k-point index at which VASP calculates the dielectric matrix."
+	},
+	"LCHARGH5": {
+		"prefix": "LCHARGH5",
+		"body": [
+			"LCHARGH5 = $1",
+			"$2"
+		],
+		"description": "LCHARGH5 determines whether the charge densities are written to vaspwave.h5."
+	},
+	"LFXC": {
+		"prefix": "LFXC",
+		"body": [
+			"LFXC = $1",
+			"$2"
+		],
+		"description": "LFXC enables the local exchange-correlation kernel in TD-DFT and TDHF calculations."
+	},
+	"LEPSILON": {
+		"prefix": "LEPSILON",
+		"body": [
+			"LEPSILON = $1",
+			"$2"
+		],
+		"description": "LEPSILON=.TRUE. determines the static dielectric matrix, ion-clamped piezoelectric tensor and the Born effective charges using density functional perturbation theory."
+	},
+	"DIMER_DIST": {
+		"prefix": "DIMER_DIST",
+		"body": [
+			"DIMER_DIST = $1",
+			"$2"
+		],
+		"description": "The flag DIMER_DIST defines the step size for the numerical differentiation (in  {\\displaystyle \\mathrm {\\AA} } ) for the Improved Dimer Method."
+	},
+	"KPUSE": {
+		"prefix": "KPUSE",
+		"body": [
+			"KPUSE = $1",
+			"$2"
+		],
+		"description": "Specifies which k points are used in the evaluation of the partial DOS (Band decomposed charge densities)."
+	},
+	"HILLS_W": {
+		"prefix": "HILLS_W",
+		"body": [
+			"HILLS_W = $1",
+			"$2"
+		],
+		"description": "HILLS_W specifies the width of the Gaussian hill (in units of the corresponding collective variable) used in metadynamics (in case VASP was compiled with -Dtbdyn)."
+	},
+	"TEEND": {
+		"prefix": "TEEND",
+		"body": [
+			"TEEND = $1",
+			"$2"
+		],
+		"description": "TEEND sets the final temperature (in K) for an ab-initio molecular-dynamics run (IBRION=0; SMASS=-1)."
+	},
+	"NBLOCK": {
+		"prefix": "NBLOCK",
+		"body": [
+			"NBLOCK = $1",
+			"$2"
+		],
+		"description": "After NBLOCK ionic steps the pair-correlation function and the DOS are calculated and the ionic configuration is written to the XDATCAR-file. It is recommended to leave NBLOCK to 1, since the computational overhead to determine the DOS and pair correlation function is minimal. Only for molecular dynamics simulations with many 1000 steps or machine learning, it might be expedient to increase NBLOCK to say 10 or even 100, to avoid large XDATCAR-files."
+	},
+	"ML_MRB1": {
+		"prefix": "ML_MRB1",
+		"body": [
+			"ML_MRB1 = $1",
+			"$2"
+		],
+		"description": "This tag sets the number N R 0 {\\displaystyle N_{\\text{R}}^{0}} of radial basis functions used to expand the radial descriptor  i ( 2 ) ( r ) {\\displaystyle \\rho _{i}^{(2)}(r)} within the machine learning force field method."
+	},
+	"NEDOS": {
+		"prefix": "NEDOS",
+		"body": [
+			"NEDOS = $1",
+			"$2"
+		],
+		"description": "NEDOS specifies the number of grid points on which the DOS is evaluated"
+	},
+	"VDW_RADIUS": {
+		"prefix": "VDW_RADIUS",
+		"body": [
+			"VDW_RADIUS = $1",
+			"$2"
+		],
+		"description": "VDW_RADIUS defines the cutoff radius (in  {\\displaystyle \\mathrm {\\AA} } ) for the pair interactions used in the DFT-D2 and DFT-D3 method."
+	},
+	"NMAXFOCKAE": {
+		"prefix": "NMAXFOCKAE",
+		"body": [
+			"NMAXFOCKAE = $1",
+			"$2"
+		],
+		"description": "LMAXFOCKAE = [integer]"
+	},
+	"ML_SION2": {
+		"prefix": "ML_SION2",
+		"body": [
+			"ML_SION2 = $1",
+			"$2"
+		],
+		"description": "This tag specifies the width  atom {\\displaystyle \\sigma _{\\text{atom}}} of the Gaussian functions used for broadening the atomic distributions of the angular descriptor  i ( 3 ) ( r ) {\\displaystyle \\rho _{i}^{(3)}(r)} within the machine learning force field method."
+	},
+	"NSUBSYS": {
+		"prefix": "NSUBSYS",
+		"body": [
+			"NSUBSYS = $1",
+			"$2"
+		],
+		"description": "NSUBSYS defines the atomic subsystems in calculations with multiple Anderson thermostats (in case VASP was compiled with -Dtbdyn)."
+	},
+	"PARAM2": {
+		"prefix": "PARAM2",
+		"body": [
+			"PARAM2 = $1",
+			"$2"
+		],
+		"description": "The tag PARAM2 determines the value corresponding to  {\\displaystyle \\kappa } in the exchange GGA optB86b[1]/B86R[2] (GGA=MK) or  {\\displaystyle \\mu } in the exchange GGA optB88[3] (GGA=BO)."
+	},
+	"VDW_SR": {
+		"prefix": "VDW_SR",
+		"body": [
+			"VDW_SR = $1",
+			"$2"
+		],
+		"description": "VDW_SR defines the damping function parameter s R {\\displaystyle s_{R}} (or scaling factor) in the DFT-D2 and DFT-D3 method."
+	},
+	"ML_LEATOM": {
+		"prefix": "ML_LEATOM",
+		"body": [
+			"ML_LEATOM = $1",
+			"$2"
+		],
+		"description": "This term specifies whether the total atomic energy is written out or not."
+	},
+	"STEP_SIZE": {
+		"prefix": "STEP_SIZE",
+		"body": [
+			"STEP_SIZE = $1",
+			"$2"
+		],
+		"description": "The flag STEP_SIZE defines the trial step size for the optimization step (in  {\\displaystyle \\mathrm {\\AA} } ) in the Improved Dimer Method."
+	},
+	"NKREDX": {
+		"prefix": "NKREDX",
+		"body": [
+			"NKREDX = $1",
+			"$2"
+		],
+		"description": "NKREDX specifies a reduction factor for the q-point grid representation of the exact exchange potential along reciprocal space direction b1."
+	},
+	"ML_EPS_LOW": {
+		"prefix": "ML_EPS_LOW",
+		"body": [
+			"ML_EPS_LOW = $1",
+			"$2"
+		],
+		"description": "Threshold for the CUR algorithm used in the sparsification of local reference configurations within the machine learning force fields."
+	},
+	"ML_AFILT2": {
+		"prefix": "ML_AFILT2",
+		"body": [
+			"ML_AFILT2 = $1",
+			"$2"
+		],
+		"description": "This tag sets the filtering parameter for the angular filtering for ML_IAFILT2 in the machine learning force field method."
+	},
+	"ML_EPS_REG": {
+		"prefix": "ML_EPS_REG",
+		"body": [
+			"ML_EPS_REG = $1",
+			"$2"
+		],
+		"description": "Initial value for the threshold of the eigenvalues of the covariance matrix in the evidence approximation."
+	},
+	"ML_LMLFF": {
+		"prefix": "ML_LMLFF",
+		"body": [
+			"ML_LMLFF = $1",
+			"$2"
+		],
+		"description": "Main control tag which enables/disables the use of machine learning force fields."
+	},
+	"ML_SION1": {
+		"prefix": "ML_SION1",
+		"body": [
+			"ML_SION1 = $1",
+			"$2"
+		],
+		"description": "This tag specifies the width  atom {\\displaystyle \\sigma _{\\text{atom}}} of the Gaussian functions used for broadening the atomic distributions of the radial descriptor  i ( 2 ) ( r ) {\\displaystyle \\rho _{i}^{(2)}(r)} within the machine learning force field method."
+	},
+	"NGXF": {
+		"prefix": "NGXF",
+		"body": [
+			"NGXF = $1",
+			"$2"
+		],
+		"description": "NGXF sets the number of grid points in the 'fine' FFT grid along the first lattice vector."
+	},
+	"NOMEGAPAR": {
+		"prefix": "NOMEGAPAR",
+		"body": [
+			"NOMEGAPAR = $1",
+			"$2"
+		],
+		"description": "NOMEGAPAR available as of VASP.6, specifies the number of processor groups sharing the same imaginary frequency grid points."
+	},
+	"NCRPA_BANDS": {
+		"prefix": "NCRPA_BANDS",
+		"body": [
+			"NCRPA_BANDS = $1",
+			"$2"
+		],
+		"description": "Controls which bands are excluded in the constrained random phase approximation. Check also NTARGET_STATES."
+	},
+	"ML_MHIS": {
+		"prefix": "ML_MHIS",
+		"body": [
+			"ML_MHIS = $1",
+			"$2"
+		],
+		"description": "This tag sets the number of estimated errors stored in memory to determine the threshold for the Bayesian error in the machine learning force field method for ML_ICRITERIA=1. For ML_ICRITERIA=2, the history length is 50 x ML_MHIS (or hard coded to 400)."
+	},
+	"OMEGAMIN": {
+		"prefix": "OMEGAMIN",
+		"body": [
+			"OMEGAMIN = $1",
+			"$2"
+		],
+		"description": "OMEGAMIN sets the minimum frequency in the frequency grid."
+	},
+	"POMASS": {
+		"prefix": "POMASS",
+		"body": [
+			"POMASS = $1",
+			"$2"
+		],
+		"description": "POMASS describes the mass of each atomic sphere in atomic units."
+	},
+	"PHON_LBOSE": {
+		"prefix": "PHON_LBOSE",
+		"body": [
+			"PHON_LBOSE = $1",
+			"$2"
+		],
+		"description": "This flag determines whether random structures in the Monte-Carlo (MC) sampling are created according to Bose-Einstein or Maxwell-Boltzmann statistics."
+	},
+	"NGZ": {
+		"prefix": "NGZ",
+		"body": [
+			"NGZ = $1",
+			"$2"
+		],
+		"description": "NGZ sets the number of grid points in the FFT-grid along the third lattice vector."
+	},
+	"NGZF": {
+		"prefix": "NGZF",
+		"body": [
+			"NGZF = $1",
+			"$2"
+		],
+		"description": "NGZF sets the number of grid points in the 'fine' FFT grid along the first lattice vector."
+	},
+	"PHON_G_CUTOFF": {
+		"prefix": "PHON_G_CUTOFF",
+		"body": [
+			"PHON_G_CUTOFF = $1",
+			"$2"
+		],
+		"description": "PHON_G_CUTOFF sets the cutoff radius in reciprocal space used to determine the number of G {\\displaystyle \\mathbf {G} } vectors involved in the Ewald sum in polar phonon calculations."
+	},
+	"PHON_NTLIST": {
+		"prefix": "PHON_NTLIST",
+		"body": [
+			"PHON_NTLIST = $1",
+			"$2"
+		],
+		"description": "This flag sets the number of temperatures for that the electron-phonon interactions using the ZG configuration[1] is evaluated."
+	},
+	"NBANDS": {
+		"prefix": "NBANDS",
+		"body": [
+			"NBANDS = $1",
+			"$2"
+		],
+		"description": "NBANDS specifies the total number of KS or QP orbitals in the calculation."
+	},
+	"VCUTOFF": {
+		"prefix": "VCUTOFF",
+		"body": [
+			"VCUTOFF = $1",
+			"$2"
+		],
+		"description": "The parameter VCUTOFF sets the energy cutoff for bare Coulomb matrix elements and controls the basis set for the bare Coulomb interaction."
+	},
+	"MAXMEM": {
+		"prefix": "MAXMEM",
+		"body": [
+			"MAXMEM = $1",
+			"$2"
+		],
+		"description": "MAXMEM specifies the maximum memory one MPI rank will attempt to allocate (in MByte). Since, the default varies somewhat between VASP versions, it is safer to set this flag manually. Currently the flag is only inspected in few selected routines, such as the GW or RPA routines that can use excessive amounts of memory. It is recommended to set MAXMEM to the available memory per core minus 200 Mbyte. For instance, if one node is equipped with 12 Gbyte, and 6 MPI ranks share this memory, the recommended setting is 12*1024/6-200 = 1848."
+	},
+	"PROUTINE": {
+		"prefix": "PROUTINE",
+		"body": [
+			"PROUTINE = $1",
+			"$2"
+		],
+		"description": "Control flag for the output of the profiling routines."
+	},
+	"ML_LSPARSDES": {
+		"prefix": "ML_LSPARSDES",
+		"body": [
+			"ML_LSPARSDES = $1",
+			"$2"
+		],
+		"description": "This tag specifies whether angular descriptor sparsification is enabled within the machine learning force field method."
+	},
+	"ML_MCONF_NEW": {
+		"prefix": "ML_MCONF_NEW",
+		"body": [
+			"ML_MCONF_NEW = $1",
+			"$2"
+		],
+		"description": "This tag sets the number of configurations that are stored temporarily as candidates for the training data in the machine learning force field method."
+	},
+	"NKREDZ": {
+		"prefix": "NKREDZ",
+		"body": [
+			"NKREDZ = $1",
+			"$2"
+		],
+		"description": "NKREDZ specifies a reduction factor for the q-point grid representation of the exact exchange potential along reciprocal space direction b3."
+	},
+	"TEBEG": {
+		"prefix": "TEBEG",
+		"body": [
+			"TEBEG = $1",
+			"$2"
+		],
+		"description": "TEBEG sets the starting temperature (in K) for an ab-initio molecular dynamics run (IBRION=0) and other routines (e.g. Electron-phonon interactions from Monte-Carlo sampling)."
+	},
+	"NCORE": {
+		"prefix": "NCORE",
+		"body": [
+			"NCORE = $1",
+			"$2"
+		],
+		"description": "NCORE determines the number of compute cores that work on an individual orbital (available as of VASP.5.2.13)."
+	},
+	"ML_EATOM_REF": {
+		"prefix": "ML_EATOM_REF",
+		"body": [
+			"ML_EATOM_REF = $1",
+			"$2"
+		],
+		"description": "Reference total energies of isolated atoms used in the machine learning force field method."
+	},
+	"QUAD_EFG": {
+		"prefix": "QUAD_EFG",
+		"body": [
+			"QUAD_EFG = $1",
+			"$2"
+		],
+		"description": "nuclear quadrupole moment (in millbarn) for the atomic types on the POTCAR file."
+	},
+	"ROPT": {
+		"prefix": "ROPT",
+		"body": [
+			"ROPT = $1",
+			"$2"
+		],
+		"description": "ROPT determines how accurately the projectors are represented in real space. If LREAL=Auto is used, ROPT will be internally set to negative values. If LREAL=On is used, ROPT will be internally set to positive values. Whether the user supplies negative or positive values in the INCAR file is irrelevant. LREAL=On is outdated and should be only used, if compatibility to old calculations is desired. For LREAL=On, the real space projectors are optimized using an algorithm proposed by King-Smith et al.[1] For the recommended LREAL=Auto, an unpublished scheme[2] is used. This scheme is considerably more accurate resulting in more localized projector functions than for the King-Smith et al. method."
+	},
+	"PHON_NWRITE": {
+		"prefix": "PHON_NWRITE",
+		"body": [
+			"PHON_NWRITE = $1",
+			"$2"
+		],
+		"description": "PHON_NWRITE determines how much output is written to the OUTCAR file when computing the phonon dispersion LPHON_DISPERSION=.TRUE."
+	},
+	"ML_IAFILT2": {
+		"prefix": "ML_IAFILT2",
+		"body": [
+			"ML_IAFILT2 = $1",
+			"$2"
+		],
+		"description": "This tag specifies the type of angular filtering used in the machine learning force field method."
+	},
+	"VDW_R0": {
+		"prefix": "VDW_R0",
+		"body": [
+			"VDW_R0 = $1",
+			"$2"
+		],
+		"description": "VDW_R0 defines the R 0 {\\displaystyle R_{0}} parameters (  {\\displaystyle \\mathrm {\\AA} } ) for each species defined in the DFT-D2 and Tkatchenko-Scheffler methods."
+	},
+	"NATURALO": {
+		"prefix": "NATURALO",
+		"body": [
+			"NATURALO = $1",
+			"$2"
+		],
+		"description": "calculate RPA natural orbitals."
+	},
+	"ML_CTIFOR": {
+		"prefix": "ML_CTIFOR",
+		"body": [
+			"ML_CTIFOR = $1",
+			"$2"
+		],
+		"description": "This flag sets the threshold for the Bayesian error estimation on the force within the machine learning force field method."
+	},
+	"PARAM1": {
+		"prefix": "PARAM1",
+		"body": [
+			"PARAM1 = $1",
+			"$2"
+		],
+		"description": "The tag PARAM1 determines the value corresponding to  {\\displaystyle \\mu } in the exchange GGA optB86b[1]/B86R[2] (GGA=MK) or  {\\displaystyle \\beta } in the exchange GGA optB88[3] (GGA=BO)."
+	},
+	"VDW_A2": {
+		"prefix": "VDW_A2",
+		"body": [
+			"VDW_A2 = $1",
+			"$2"
+		],
+		"description": "VDW_A2 defines the damping function parameter a 2 {\\displaystyle a_{2}} in the DFT-D3 method."
+	},
+	"ML_ICRITERIA": {
+		"prefix": "ML_ICRITERIA",
+		"body": [
+			"ML_ICRITERIA = $1",
+			"$2"
+		],
+		"description": "Decides whether (ML_ICRITERIA>0) or how the Bayesian error threshold (ML_CTIFOR) is updated within the machine learning force field method. ML_CTIFOR determines whether a first principles calculations is performed."
+	},
+	"NELMGW": {
+		"prefix": "NELMGW",
+		"body": [
+			"NELMGW = $1",
+			"$2"
+		],
+		"description": "NELMGW sets the number of self-consistent GW steps. Available as of 6.3.0."
+	},
+	"NUM_WANN": {
+		"prefix": "NUM_WANN",
+		"body": [
+			"NUM_WANN = $1",
+			"$2"
+		],
+		"description": "Since vasp 6.2.0 NUM_WANN determines the number of Wannier orbitals to be used with wannier90. Note that the num_wann value written to the wannier90.win file is always the value of NUM_WANN known by vasp."
+	},
+	"SMASS": {
+		"prefix": "SMASS",
+		"body": [
+			"SMASS = $1",
+			"$2"
+		],
+		"description": "SMASS controls the velocities during an ab-initio molecular-dynamics run."
+	},
+	"PHON_SIGMA": {
+		"prefix": "PHON_SIGMA",
+		"body": [
+			"PHON_SIGMA = $1",
+			"$2"
+		],
+		"description": "PHON_SIGMA sets the width of the gaussian function in units of eV to use in the computation of the phonon density of states."
+	},
+	"ML_LAFILT2": {
+		"prefix": "ML_LAFILT2",
+		"body": [
+			"ML_LAFILT2 = $1",
+			"$2"
+		],
+		"description": "This tag specifies whether angular filtering is applied or not within the machine learning force field method."
+	},
+	"SPRING": {
+		"prefix": "SPRING",
+		"body": [
+			"SPRING = $1",
+			"$2"
+		],
+		"description": "SPRING gives the spring constant between the images as used in the elastic band method."
+	},
+	"ML_SIGW0": {
+		"prefix": "ML_SIGW0",
+		"body": [
+			"ML_SIGW0 = $1",
+			"$2"
+		],
+		"description": "This flag sets the initial reversed and squared precision parameter 1  w 2 {\\displaystyle {\\frac {1}{\\sigma _{\\mathrm {w} }^{2}}}} in the machine learning force field method."
+	},
+	"PREC": {
+		"prefix": "PREC",
+		"body": [
+			"PREC = $1",
+			"$2"
+		],
+		"description": "PREC specifies the 'precision'-mode."
+	},
+	"WC": {
+		"prefix": "WC",
+		"body": [
+			"WC = $1",
+			"$2"
+		],
+		"description": "WC specifies the weight factor for each step in Broyden mixing scheme (IMIX=4)."
+	},
+	"ML_NRANK_SPARSDES": {
+		"prefix": "ML_NRANK_SPARSDES",
+		"body": [
+			"ML_NRANK_SPARSDES = $1",
+			"$2"
+		],
+		"description": "This tag sets the number of highest eigenvalues to which the correlation is measured within the angular descriptor sparsification (within the machine learning force field method)."
+	},
+	"STOP_ON": {
+		"prefix": "STOP_ON",
+		"body": [
+			"STOP_ON = $1",
+			"$2"
+		],
+		"description": "STOP_ON defines if the code should stop on errors only or also on alerts."
+	},
+	"LWRITE_UNK": {
+		"prefix": "LWRITE_UNK",
+		"body": [
+			"LWRITE_UNK = $1",
+			"$2"
+		],
+		"description": "LWRITE_UNK decides whether the cell-periodic part of the relevant Bloch functions is written."
+	},
+	"ML_IALGO_LINREG": {
+		"prefix": "ML_IALGO_LINREG",
+		"body": [
+			"ML_IALGO_LINREG = $1",
+			"$2"
+		],
+		"description": "This tag determines the algorithm that is employed to solve the system of linear equations in the ridge regression method for machine learning."
+	},
+	"SMEARINGS": {
+		"prefix": "SMEARINGS",
+		"body": [
+			"SMEARINGS = $1",
+			"$2"
+		],
+		"description": "SMEARINGS defines the smearing parameters for ISMEAR=-3 in the calculation of the partial occupancies."
+	},
+	"SCSRAD": {
+		"prefix": "SCSRAD",
+		"body": [
+			"SCSRAD = $1",
+			"$2"
+		],
+		"description": "SCSRAD defines the cutoff radius (in  {\\displaystyle \\mathrm {\\AA} } ) used in the calculation of $  i j $ {\\displaystyle \\$\\tau _{ij}\\$} within the Tkatchenko-Scheffler method Self-consistent screening in Tkatchenko-Scheffler method."
+	},
+	"NRMM": {
+		"prefix": "NRMM",
+		"body": [
+			"NRMM = $1",
+			"$2"
+		],
+		"description": "NRMM sets the maximum number of iterative steps for RMM-DIIS (IALGO=4X) or Davidson algorithms (IALGO=3X)."
+	},
+	"PHON_DIELECTRIC": {
+		"prefix": "PHON_DIELECTRIC",
+		"body": [
+			"PHON_DIELECTRIC = $1",
+			"$2"
+		],
+		"description": "PHON_DIELECTRIC sets the static dielectric tensor to be used for the dipole-dipole corrections in the computation of the phonon dispersion. This is only used when LPHON_POLAR=.TRUE."
+	},
+	"SHAKETOL": {
+		"prefix": "SHAKETOL",
+		"body": [
+			"SHAKETOL = $1",
+			"$2"
+		],
+		"description": "SHAKETOL specifies the tolerance for the SHAKE algorithm (in case VASP was compiled with -Dtbdyn)."
+	},
+	"VCAIMAGES": {
+		"prefix": "VCAIMAGES",
+		"body": [
+			"VCAIMAGES = $1",
+			"$2"
+		],
+		"description": "The tag VCAIMAGES allows to perform thermodynamic coupling constant integrations. To achieve this, two molecular dynamics simulations are performed with e.g. different POTCAR or KPOINTS files or different exchange-correlation functionals, and force averaging between the two calculations is done[1]."
+	},
+	"NGX": {
+		"prefix": "NGX",
+		"body": [
+			"NGX = $1",
+			"$2"
+		],
+		"description": "NGX sets the number of grid points in the FFT-grid along the first lattice vector."
+	},
+	"LWRITE_WANPROJ": {
+		"prefix": "LWRITE_WANPROJ",
+		"body": [
+			"LWRITE_WANPROJ = $1",
+			"$2"
+		],
+		"description": "LWRITE_WANPROJ determines whether the Wannier projection file WANPROJ is written."
+	},
+	"VALUE_MAX": {
+		"prefix": "VALUE_MAX",
+		"body": [
+			"VALUE_MAX = $1",
+			"$2"
+		],
+		"description": "VALUE_MAX sets the upper limits for the monitoring of geometric parameters (in case VASP was compiled with -Dtbdyn)."
+	},
+	"NSW": {
+		"prefix": "NSW",
+		"body": [
+			"NSW = $1",
+			"$2"
+		],
+		"description": "NSW sets the maximum number of ionic steps."
+	},
+	"VDW_A1": {
+		"prefix": "VDW_A1",
+		"body": [
+			"VDW_A1 = $1",
+			"$2"
+		],
+		"description": "VDW_A1 defines the damping function parameter a 1 {\\displaystyle a_{1}} in the DFT-D3 method."
+	},
+	"QMAXFOCKAE": {
+		"prefix": "QMAXFOCKAE",
+		"body": [
+			"QMAXFOCKAE = $1",
+			"$2"
+		],
+		"description": "The parameter QMAXFOCKAE controls at which wave vectors the local augmentation charges are fitted to obtain an accurate charge augmentation on the plane wave grid."
+	},
+	"ML_SCLC_CTIFOR": {
+		"prefix": "ML_SCLC_CTIFOR",
+		"body": [
+			"ML_SCLC_CTIFOR = $1",
+			"$2"
+		],
+		"description": "Sets fraction by which the Bayesian threshold for the maximum forces is lowered in the selection of local reference calculations."
+	},
+	"NKREDY": {
+		"prefix": "NKREDY",
+		"body": [
+			"NKREDY = $1",
+			"$2"
+		],
+		"description": "NKREDY specifies a reduction factor for the q-point grid representation of the exact exchange potential along reciprocal space direction b2."
+	},
+	"WEIMIN": {
+		"prefix": "WEIMIN",
+		"body": [
+			"WEIMIN = $1",
+			"$2"
+		],
+		"description": "WEIMIN specifies the maximum weight for a band to be considered empty."
+	},
+	"ML_NHYP": {
+		"prefix": "ML_NHYP",
+		"body": [
+			"ML_NHYP = $1",
+			"$2"
+		],
+		"description": "This tag specifies the polynomial power  {\\displaystyle \\zeta } of the kernel within the machine learning force field method (see this section)."
+	},
+	"VALUE_MIN": {
+		"prefix": "VALUE_MIN",
+		"body": [
+			"VALUE_MIN = $1",
+			"$2"
+		],
+		"description": "VALUE_MIN sets the lower limits for the monitoring of geometric parameters (in case VASP was compiled with -Dtbdyn)."
+	},
+	"ML_CX": {
+		"prefix": "ML_CX",
+		"body": [
+			"ML_CX = $1",
+			"$2"
+		],
+		"description": "The parameter determines to which value the threshold (ML_CTIFOR) is updated within the machine learning force field methods."
+	},
+	"SCALEE": {
+		"prefix": "SCALEE",
+		"body": [
+			"SCALEE = $1",
+			"$2"
+		],
+		"description": "This tag specifies the coupling parameter of the energies and forces between a fully interacting system and a reference system."
+	},
+	"ML_RCOUPLE": {
+		"prefix": "ML_RCOUPLE",
+		"body": [
+			"ML_RCOUPLE = $1",
+			"$2"
+		],
+		"description": "This tag specifies the value of the coupling parameter for the calculation of the chemical potential within the machine learning force field method."
+	},
+	"ML_LCOUPLE": {
+		"prefix": "ML_LCOUPLE",
+		"body": [
+			"ML_LCOUPLE = $1",
+			"$2"
+		],
+		"description": "This tag specifies whether thermodynamic integration is activated in order to calculate the chemical potentials within the machine learning force field method."
+	},
+	"NTEMPER": {
+		"prefix": "NTEMPER",
+		"body": [
+			"NTEMPER = $1",
+			"$2"
+		],
+		"description": "NTEMPER specifies how often temperature swaps are attempted during parallel tempering. The flag must be used in combination with IMAGES and LTEMPER."
+	},
+	"SIGMA": {
+		"prefix": "SIGMA",
+		"body": [
+			"SIGMA = $1",
+			"$2"
+		],
+		"description": "SIGMA specifies the width of the smearing in eV."
+	},
+	"VDW_C6": {
+		"prefix": "VDW_C6",
+		"body": [
+			"VDW_C6 = $1",
+			"$2"
+		],
+		"description": "VDW_C6 defines the C 6 {\\displaystyle C_{6}} parameters ( J n m 6 m o l - 1 {\\displaystyle \\mathrm {Jnm} ^{6}\\mathrm {mol} ^{-1}} ) for each species defined in the POSCAR file within the DFT-D2 and Tkatchenko-Scheffler methods."
+	},
+	"ML_ISTART": {
+		"prefix": "ML_ISTART",
+		"body": [
+			"ML_ISTART = $1",
+			"$2"
+		],
+		"description": "This tag selects the mode of operation (e.g. start from scratch, prediction-only,...) of the machine learning force fields method."
+	},
+	"PLEVEL": {
+		"prefix": "PLEVEL",
+		"body": [
+			"PLEVEL = $1",
+			"$2"
+		],
+		"description": "Control flag for the output of the profiling routines."
+	},
+	"ODDONLY": {
+		"prefix": "ODDONLY",
+		"body": [
+			"ODDONLY = $1",
+			"$2"
+		],
+		"description": "ODDONLY=.TRUE. selects a subset of k-points for the representation of the Fock exchange potential, with C1=C2=C3=1, and n1+n2+n3 odd."
+	},
+	"ML_SIGV0": {
+		"prefix": "ML_SIGV0",
+		"body": [
+			"ML_SIGV0 = $1",
+			"$2"
+		],
+		"description": "This flag sets the initial reversed and squared noise parameter 1  v 2 {\\displaystyle {\\frac {1}{\\sigma _{\\mathrm {v} }^{2}}}} in the machine learning force field method."
+	},
+	"M_CONSTR": {
+		"prefix": "M_CONSTR",
+		"body": [
+			"M_CONSTR = $1",
+			"$2"
+		],
+		"description": "M_CONSTR specifies the desired local magnetic moment (size and/or direction) for the constrained local moments approach."
+	},
+	"OMEGAMAX": {
+		"prefix": "OMEGAMAX",
+		"body": [
+			"OMEGAMAX = $1",
+			"$2"
+		],
+		"description": "OMEGAMAX specifies the maximum frequency for the dense part of the frequency grid for GW calculations (old GW code, does not apply to GWR). For CRPA calculations, OMEGAMAX is the frequency point of the interaction. For BSE calculations OMEGAMAX determines the maximum energy difference for excitation pairs to be included. Since the flag controls different aspects of the code, be careful when setting it (and remember to remove the tag, when you change the type of calculations)."
+	},
+	"MDALGO": {
+		"prefix": "MDALGO",
+		"body": [
+			"MDALGO = $1",
+			"$2"
+		],
+		"description": "MDALGO specifies the molecular-dynamics-simulation protocol (in case IBRION=0 and VASP was compiled with -Dtbdyn)."
+	},
+	"NKRED": {
+		"prefix": "NKRED",
+		"body": [
+			"NKRED = $1",
+			"$2"
+		],
+		"description": "NKRED specifies an uniform reduction factor for the q-point grid representation of the exact exchange potential and the correlation part in GW calculations."
+	},
+	"NPAR": {
+		"prefix": "NPAR",
+		"body": [
+			"NPAR = $1",
+			"$2"
+		],
+		"description": "NPAR determines the number of bands that are treated in parallel."
+	},
+	"LWRITE_MMN_AMN": {
+		"prefix": "LWRITE_MMN_AMN",
+		"body": [
+			"LWRITE_MMN_AMN = $1",
+			"$2"
+		],
+		"description": "LWRITE_MMN_AMN=.TRUE. tells the VASP2WANNIER90 interface to write the wannier90.mmn and wannier90.amn files."
+	},
+	"NBANDSV": {
+		"prefix": "NBANDSV",
+		"body": [
+			"NBANDSV = $1",
+			"$2"
+		],
+		"description": "NBANDSV determines how many unoccupied orbitals are included in the Casida/BSE calculations or timepropagation."
+	},
+	"VCA": {
+		"prefix": "VCA",
+		"body": [
+			"VCA = $1",
+			"$2"
+		],
+		"description": "VCA is short for the virtual crystal approximation; the tag allows to 'weight' each species found in the POTCAR file."
+	},
+	"OMEGATL": {
+		"prefix": "OMEGATL",
+		"body": [
+			"OMEGATL = $1",
+			"$2"
+		],
+		"description": "OMEGATL specifies the maximum frequency for the coarse part of the frequency grid."
+	},
+	"VDW_ALPHA": {
+		"prefix": "VDW_ALPHA",
+		"body": [
+			"VDW_ALPHA = $1",
+			"$2"
+		],
+		"description": "VDW_ALPHA defines the polarizability  0 {\\displaystyle \\alpha _{0}} (bohr 3 {\\displaystyle ^{3}} ) for each species defined in the POSCAR file within the Tkatchenko-Scheffler method."
+	},
+	"LZEROZ": {
+		"prefix": "LZEROZ",
+		"body": [
+			"LZEROZ = $1",
+			"$2"
+		],
+		"description": "for LZEROZ=.TRUE. the z-component of the spin-spiral magnetisation density will be forced to be and to remain zero."
+	},
+	"WANNIER90_WIN": {
+		"prefix": "WANNIER90_WIN",
+		"body": [
+			"WANNIER90_WIN = $1",
+			"$2"
+		],
+		"description": "WANNIER90_WIN sets the content of the wannier90.win file."
+	},
+	"MIXPRE": {
+		"prefix": "MIXPRE",
+		"body": [
+			"MIXPRE = $1",
+			"$2"
+		],
+		"description": "MIXPRE specifies the metric in the Broyden mixing scheme(IMIX=4)."
+	},
+	"QSPIRAL": {
+		"prefix": "QSPIRAL",
+		"body": [
+			"QSPIRAL = $1",
+			"$2"
+		],
+		"description": "the QSPIRAL-tag specifies the spin spiral propagation vector."
+	},
+	"STEP_MAX": {
+		"prefix": "STEP_MAX",
+		"body": [
+			"STEP_MAX = $1",
+			"$2"
+		],
+		"description": "The flag STEP_MAX defines the trust radius (upper limit) for the optimization step (in  {\\displaystyle \\mathrm {\\AA} } ) in the Improved Dimer Method."
+	},
+	"MINROT": {
+		"prefix": "MINROT",
+		"body": [
+			"MINROT = $1",
+			"$2"
+		],
+		"description": "The flag MINROT defines the value for which the dimer is rotated only if the predicted rotation angle is greater than MINROT (rad.) in the Improved Dimer Method."
+	},
+	"SAXIS": {
+		"prefix": "SAXIS",
+		"body": [
+			"SAXIS = $1",
+			"$2"
+		],
+		"description": "SAXIS specifies the quantisation axis for noncollinear spins."
+	},
+	"SYSTEM": {
+		"prefix": "SYSTEM",
+		"body": [
+			"SYSTEM = $1",
+			"$2"
+		],
+		"description": "The 'title string' defined by SYSTEM is for the user only and should help the user to identify what he/she wants to do with this specific input file."
+	},
+	"ML_NMDINT": {
+		"prefix": "ML_NMDINT",
+		"body": [
+			"ML_NMDINT = $1",
+			"$2"
+		],
+		"description": "Tag to control the minimum interval to get training samples in the machine learning force field method."
+	},
+	"VDW_CNRADIUS": {
+		"prefix": "VDW_CNRADIUS",
+		"body": [
+			"VDW_CNRADIUS = $1",
+			"$2"
+		],
+		"description": "VDW_CNRADIUS defines the cutoff radius (in  {\\displaystyle \\mathrm {\\AA} } ) for the calculation of the coordination numbers used in the DFT-D3 method."
+	},
+	"OFIELD_Q6_FAR": {
+		"prefix": "OFIELD_Q6_FAR",
+		"body": [
+			"OFIELD_Q6_FAR = $1",
+			"$2"
+		],
+		"description": "OFIELD_Q6_FAR sets the far fading distance for the computation of a continuous Q 6 {\\displaystyle Q_{6}} parameter in the interface-pinning method."
+	},
+	"PHON_NEDOS": {
+		"prefix": "PHON_NEDOS",
+		"body": [
+			"PHON_NEDOS = $1",
+			"$2"
+		],
+		"description": "PHON_NEDOS sets the number of frequency points to use in the computation of the phonon density of states."
+	},
+	"NGY": {
+		"prefix": "NGY",
+		"body": [
+			"NGY = $1",
+			"$2"
+		],
+		"description": "NGY sets the number of grid points in the FFT grid along the second lattice vector."
+	},
+	"ML_WTOTEN": {
+		"prefix": "ML_WTOTEN",
+		"body": [
+			"ML_WTOTEN = $1",
+			"$2"
+		],
+		"description": "This tag sets the weight for the scaling of the total energy in the training data within the machine learning force field method."
+	},
+	"PRECFOCK": {
+		"prefix": "PRECFOCK",
+		"body": [
+			"PRECFOCK = $1",
+			"$2"
+		],
+		"description": "PRECFOCK controls the FFT grids used in the exact exchange routines (Hartree-Fock and hybrid functionals)."
+	},
+	"ML_IWEIGHT": {
+		"prefix": "ML_IWEIGHT",
+		"body": [
+			"ML_IWEIGHT = $1",
+			"$2"
+		],
+		"description": "This tag controls which procedure is used for normalizing and weighting the energies, forces and stresses in the machine learning force field method."
+	},
+	"NOMEGAR": {
+		"prefix": "NOMEGAR",
+		"body": [
+			"NOMEGAR = $1",
+			"$2"
+		],
+		"description": "NOMEGAR specifies the number of frequency grid points along the real axis."
+	},
+	"SYMPREC": {
+		"prefix": "SYMPREC",
+		"body": [
+			"SYMPREC = $1",
+			"$2"
+		],
+		"description": "SYMPREC determines to which accuracy the positions in the POSCAR file must be specified (as of VASP.4.4.4)."
+	},
+	"ML_RCUT1": {
+		"prefix": "ML_RCUT1",
+		"body": [
+			"ML_RCUT1 = $1",
+			"$2"
+		],
+		"description": "This flag sets the cutoff radius R cut {\\displaystyle R_{\\text{cut}}} for the radial descriptor  i ( 2 ) ( r ) {\\displaystyle \\rho _{i}^{(2)}(r)} in the machine learning force field method."
+	},
+	"ML_MB": {
+		"prefix": "ML_MB",
+		"body": [
+			"ML_MB = $1",
+			"$2"
+		],
+		"description": "This tag sets the maximum number of local reference configurations in the machine learning force field method."
+	},
+	"ML_MCONF": {
+		"prefix": "ML_MCONF",
+		"body": [
+			"ML_MCONF = $1",
+			"$2"
+		],
+		"description": "This tag sets the maximum number of structures stored in memory which are used for training in the machine learning force field method."
+	},
+	"NSIM": {
+		"prefix": "NSIM",
+		"body": [
+			"NSIM = $1",
+			"$2"
+		],
+		"description": "NSIM sets the number of bands that are optimized simultaneously by the RMM-DIIS algorithm."
+	},
+	"PHON_LMC": {
+		"prefix": "PHON_LMC",
+		"body": [
+			"PHON_LMC = $1",
+			"$2"
+		],
+		"description": "This flag controls whether electron-phonon interactions from Monte-Carlo sampling are calculated or not."
+	},
+	"VDW_C6AU": {
+		"prefix": "VDW_C6AU",
+		"body": [
+			"VDW_C6AU = $1",
+			"$2"
+		],
+		"description": "VDW_C6AU defines the C 6 {\\displaystyle C_{6}} parameters ( H a r t r e e {\\displaystyle \\mathrm {Hartree} } b o h r 6 {\\displaystyle \\mathrm {bohr} ^{6}} ) for each species defined in the POSCAR file within the Tkatchenko-Scheffler method."
+	},
+	"VDW_S6": {
+		"prefix": "VDW_S6",
+		"body": [
+			"VDW_S6 = $1",
+			"$2"
+		],
+		"description": "VDW_S6 defines the global scaling factor s 6 {\\displaystyle s_{6}} in the DFT-D2 method."
+	},
+	"ML_RDES_SPARSDES": {
+		"prefix": "ML_RDES_SPARSDES",
+		"body": [
+			"ML_RDES_SPARSDES = $1",
+			"$2"
+		],
+		"description": "This tag sets the ratio of the selected to the total number of descriptors within the angular descriptor sparsification (within the machine learning force field method)."
+	},
+	"VDW_S8": {
+		"prefix": "VDW_S8",
+		"body": [
+			"VDW_S8 = $1",
+			"$2"
+		],
+		"description": "VDW_S8 defines the damping function parameter s 8 {\\displaystyle s_{8}} in the DFT-D3 method."
+	},
+	"NGYF": {
+		"prefix": "NGYF",
+		"body": [
+			"NGYF = $1",
+			"$2"
+		],
+		"description": "NGYF sets the number of grid points in the 'fine' FFT grid along the second lattice vector."
+	},
+	"RWIGS": {
+		"prefix": "RWIGS",
+		"body": [
+			"RWIGS = $1",
+			"$2"
+		],
+		"description": "RWIGS specifies the Wigner-Seitz radius (in  {\\displaystyle \\mathrm {\\AA} } ) for each atom type."
+	},
+	"SHAKEMAXITER": {
+		"prefix": "SHAKEMAXITER",
+		"body": [
+			"SHAKEMAXITER = $1",
+			"$2"
+		],
+		"description": "SHAKEMAXITER specifies the maximum number of iterations in the SHAKE algorithm (in case VASP was compiled with -Dtbdyn)."
+	},
+	"PSUBSYS": {
+		"prefix": "PSUBSYS",
+		"body": [
+			"PSUBSYS = $1",
+			"$2"
+		],
+		"description": "PSUBSYS sets the collision probabilities for the atoms in each atomic subsystem in calculations with multiple Anderson thermostats (in case VASP was compiled with -Dtbdyn)."
+	},
+	"PMASS": {
+		"prefix": "PMASS",
+		"body": [
+			"PMASS = $1",
+			"$2"
+		],
+		"description": "PMASS assigns a fictitious mass (in amu) to the lattice degrees-of-freedom in case of Parrinello-Rahman dynamics (in case VASP was compiled with -Dtbdyn)."
+	},
+	"PFLAT": {
+		"prefix": "PFLAT",
+		"body": [
+			"PFLAT = $1",
+			"$2"
+		],
+		"description": "Control flag for the output of the profiling routines."
+	},
+	"MAGMOM": {
+		"prefix": "MAGMOM",
+		"body": [
+			"MAGMOM = $1",
+			"$2"
+		],
+		"description": "MAGMOM Specifies the initial magnetic moment for each atom, if and only if ICHARG=2, or if ICHARG=1 and the CHGCAR file contains no magnetisation density"
+	},
+	"ML_NATOM_COUPLED": {
+		"prefix": "ML_NATOM_COUPLED",
+		"body": [
+			"ML_NATOM_COUPLED = $1",
+			"$2"
+		],
+		"description": "This tag specifies the number of atoms for which a coupling parameter is introduced to calculate the chemical potential within the machine learning force field method."
+	},
+	"NELECT": {
+		"prefix": "NELECT",
+		"body": [
+			"NELECT = $1",
+			"$2"
+		],
+		"description": "NELECT sets the number of electrons."
+	},
+	"OFIELD_Q6_NEAR": {
+		"prefix": "OFIELD_Q6_NEAR",
+		"body": [
+			"OFIELD_Q6_NEAR = $1",
+			"$2"
+		],
+		"description": "OFIELD_Q6_NEAR sets the near-fading distance (in  {\\displaystyle \\mathrm {\\AA} } ) for the computation of a continuous Q 6 {\\displaystyle Q_{6}} parameter in the interface-pinning method."
+	},
+	"VDW_R0AU": {
+		"prefix": "VDW_R0AU",
+		"body": [
+			"VDW_R0AU = $1",
+			"$2"
+		],
+		"description": "VDW_R0AU defines the R 0 {\\displaystyle R_{0}} parameters (bohr) for each species defined in the Tkatchenko-Scheffler method."
+	},
+	"NBANDSO": {
+		"prefix": "NBANDSO",
+		"body": [
+			"NBANDSO = $1",
+			"$2"
+		],
+		"description": "NBANDSO determines how many occupied orbitals are included in the Casida/BSE calculations or time propagation (ALGO=TIMEEV."
+	},
+	"NELM": {
+		"prefix": "NELM",
+		"body": [
+			"NELM = $1",
+			"$2"
+		],
+		"description": "NELM sets the maximum number of electronic SC (self-consistency) steps."
+	},
+	"NUPDOWN": {
+		"prefix": "NUPDOWN",
+		"body": [
+			"NUPDOWN = $1",
+			"$2"
+		],
+		"description": "Sets the difference between the number of electrons in the up and down spin components."
+	},
+	"MAXMIX": {
+		"prefix": "MAXMIX",
+		"body": [
+			"MAXMIX = $1",
+			"$2"
+		],
+		"description": "MAXMIX specifies the maximum number of steps stored in the Broyden mixer (IMIX=4)."
+	},
+	"METAGGA": {
+		"prefix": "METAGGA",
+		"body": [
+			"METAGGA = $1",
+			"$2"
+		],
+		"description": "selects a meta-GGA functional."
+	},
+	"NSTORB": {
+		"prefix": "NSTORB",
+		"body": [
+			"NSTORB = $1",
+			"$2"
+		],
+		"description": "NSTORB specifies the number of stochastic orbitals per cycle in the stochastic MP2 algorithm."
+	},
+	"NGYROMAG": {
+		"prefix": "NGYROMAG",
+		"body": [
+			"NGYROMAG = $1",
+			"$2"
+		],
+		"description": "NGYROMAG specifies the nuclear gyromagnetic ratios (in MHz, for H0 = 1 T) for the atomic types on the POTCAR file."
+	},
+	"ODDONLYGW": {
+		"prefix": "ODDONLYGW",
+		"body": [
+			"ODDONLYGW = $1",
+			"$2"
+		],
+		"description": "ODDONLYGW allows to avoid the inclusion of the  {\\displaystyle \\Gamma } point in the evaluation of response functions (in GW calculations)."
+	},
+	"NBSEEIG": {
+		"prefix": "NBSEEIG",
+		"body": [
+			"NBSEEIG = $1",
+			"$2"
+		],
+		"description": "NBSEEIG sets the number of BSE eigenvectors written to the BSEFATBAND output file."
+	},
+	"ML_CDOUB": {
+		"prefix": "ML_CDOUB",
+		"body": [
+			"ML_CDOUB = $1",
+			"$2"
+		],
+		"description": "This tag controls the criterion for 'enforced' DFT calculations within the machine learning force field method."
+	},
+	"VDW_D": {
+		"prefix": "VDW_D",
+		"body": [
+			"VDW_D = $1",
+			"$2"
+		],
+		"description": "VDW_D defines the damping parameter d {\\displaystyle d} in the DFT-D2 method."
+	},
+	"OFIELD_A": {
+		"prefix": "OFIELD_A",
+		"body": [
+			"OFIELD_A = $1",
+			"$2"
+		],
+		"description": "The tag OFIELD_A sets the desired order parameter Q 6 {\\displaystyle Q_{6}} in the Interface pinning method."
+	},
+	"ML_CSIG": {
+		"prefix": "ML_CSIG",
+		"body": [
+			"ML_CSIG = $1",
+			"$2"
+		],
+		"description": "Parameter used in the automatic determination of threshold ML_CTIFOR for Bayesian error estimation in the machine learning force field method."
+	},
+	"POTIM": {
+		"prefix": "POTIM",
+		"body": [
+			"POTIM = $1",
+			"$2"
+		],
+		"description": "POTIM sets the time step in molecular dynamics or the step width in ionic relaxations."
+	},
+	"VOSKOWN": {
+		"prefix": "VOSKOWN",
+		"body": [
+			"VOSKOWN = $1",
+			"$2"
+		],
+		"description": "Determines whether Vosko-Wilk-Nusair interpolation is used or not."
+	},
+	"NBANDSGW": {
+		"prefix": "NBANDSGW",
+		"body": [
+			"NBANDSGW = $1",
+			"$2"
+		],
+		"description": "The flag determines how many QP energies are calculated and updated in GW type calculations."
+	},
+	"ML_LBASIS_DISCARD": {
+		"prefix": "ML_LBASIS_DISCARD",
+		"body": [
+			"ML_LBASIS_DISCARD = $1",
+			"$2"
+		],
+		"description": "Controls whether calculation is continued or stopped after the maximum number of local reference configurations ML_MB for a given species is reached."
+	},
+	"ML_ISCALE_TOTEN": {
+		"prefix": "ML_ISCALE_TOTEN",
+		"body": [
+			"ML_ISCALE_TOTEN = $1",
+			"$2"
+		],
+		"description": "This tag specifies how to scale the energy data in the machine learning force field method."
+	},
+	"NBMOD": {
+		"prefix": "NBMOD",
+		"body": [
+			"NBMOD = $1",
+			"$2"
+		],
+		"description": "Desription Controls which bands are used in the calculation of Band decomposed charge densities. Check also IBAND and EINT."
+	},
+	"PTHRESHOLD": {
+		"prefix": "PTHRESHOLD",
+		"body": [
+			"PTHRESHOLD = $1",
+			"$2"
+		],
+		"description": "Control flag for the output of the profiling routines."
+	},
+	"NFREE": {
+		"prefix": "NFREE",
+		"body": [
+			"NFREE = $1",
+			"$2"
+		],
+		"description": "depending on IBRION, NFREE specifies the number of remembered steps in the history of ionic convergence runs, or the number of ionic displacements in frozen phonon calculations."
+	},
+	"NWRITE": {
+		"prefix": "NWRITE",
+		"body": [
+			"NWRITE = $1",
+			"$2"
+		],
+		"description": "This tag determines how much will be written to the file OUTCAR ('verbosity tag')."
+	},
+	"ML_WTSIF": {
+		"prefix": "ML_WTSIF",
+		"body": [
+			"ML_WTSIF = $1",
+			"$2"
+		],
+		"description": "This tag sets the weight for the scaling of the stress in the training data within the machine learning force field method."
+	},
+	"NOMEGA": {
+		"prefix": "NOMEGA",
+		"body": [
+			"NOMEGA = $1",
+			"$2"
+		],
+		"description": "NOMEGA specifies the number of (imaginary) frequency and imaginary time grid points."
+	},
+	"NTARGET_STATES": {
+		"prefix": "NTARGET_STATES",
+		"body": [
+			"NTARGET_STATES = $1",
+			"$2"
+		],
+		"description": "Controls which Wannier states are excluded in constrained random phase approximation. Check also NCRPA_BANDS."
+	},
+	"PHON_DOS": {
+		"prefix": "PHON_DOS",
+		"body": [
+			"PHON_DOS = $1",
+			"$2"
+		],
+		"description": "Select the approach to use when computing the phonon density-of-states (DOS)."
+	},
+	"NELMIN": {
+		"prefix": "NELMIN",
+		"body": [
+			"NELMIN = $1",
+			"$2"
+		],
+		"description": "NELMIN specifies the minimum number of electronic self-consistency steps."
+	},
+	"NCORE_IN_IMAGE1": {
+		"prefix": "NCORE_IN_IMAGE1",
+		"body": [
+			"NCORE_IN_IMAGE1 = $1",
+			"$2"
+		],
+		"description": "This tag specifies the number of cores in the first image."
+	},
+	"NTAUPAR": {
+		"prefix": "NTAUPAR",
+		"body": [
+			"NTAUPAR = $1",
+			"$2"
+		],
+		"description": "NTAUPAR available as of VASP.6, specifies the number of MPI groups sharing same imaginary time grid points. The default value of NTAUPAR is set to the largest possible value supported on the compute nodes to speed up the GW or RPA calculation."
+	},
+	"PSTRESS": {
+		"prefix": "PSTRESS",
+		"body": [
+			"PSTRESS = $1",
+			"$2"
+		],
+		"description": "Set the pressure in kB and add corrections to the stress tensor."
+	},
+	"NPPSTR": {
+		"prefix": "NPPSTR",
+		"body": [
+			"NPPSTR = $1",
+			"$2"
+		],
+		"description": "NPPSTR specifies the number of k-points on the strings in the IGPAR direction."
+	},
+	"ML_LHEAT": {
+		"prefix": "ML_LHEAT",
+		"body": [
+			"ML_LHEAT = $1",
+			"$2"
+		],
+		"description": "This tag specifies whether the heat flux is calculated or not in the machine learning force field method."
+	},
+	"PHON_BORN_CHARGES": {
+		"prefix": "PHON_BORN_CHARGES",
+		"body": [
+			"PHON_BORN_CHARGES = $1",
+			"$2"
+		],
+		"description": "PHON_BORN_CHARGES sets the Born effective charges to be used for the dipole-dipole corrections in the computation of the phonon dispersion. This is only used when LPHON_POLAR=.TRUE."
+	},
+	"NBLK": {
+		"prefix": "NBLK",
+		"body": [
+			"NBLK = $1",
+			"$2"
+		],
+		"description": "NBLK determines the blocking factor in many BLAS level 3 routines."
+	},
+	"ML_WTIFOR": {
+		"prefix": "ML_WTIFOR",
+		"body": [
+			"ML_WTIFOR = $1",
+			"$2"
+		],
+		"description": "This tag sets the weight for the scaling of the forces in the training data within the machine learning force field method."
+	},
+	"ML_RCUT2": {
+		"prefix": "ML_RCUT2",
+		"body": [
+			"ML_RCUT2 = $1",
+			"$2"
+		],
+		"description": "This flag sets the cutoff radius R cut {\\displaystyle R_{\\text{cut}}} for the angular descriptor  i ( 3 ) ( r ) {\\displaystyle \\rho _{i}^{(3)}(r)} in the machine learning force field method."
+	},
+	"TSUBSYS": {
+		"prefix": "TSUBSYS",
+		"body": [
+			"TSUBSYS = $1",
+			"$2"
+		],
+		"description": "TSUBSYS sets the temperatures for the atomic subsystems in calculations with multiple Anderson thermostats (in case VASP was compiled with -Dtbdyn)."
+	},
+	"OFIELD_KAPPA": {
+		"prefix": "OFIELD_KAPPA",
+		"body": [
+			"OFIELD_KAPPA = $1",
+			"$2"
+		],
+		"description": "The tag OFIELD_KAPPA sets the strength of the bias potential in the Interface pinning method."
+	},
+	"ML_IREG": {
+		"prefix": "ML_IREG",
+		"body": [
+			"ML_IREG = $1",
+			"$2"
+		],
+		"description": "This tag specifies whether the regularization parameters are kept constant or not in the machine learning force field method."
+	},
+	"NELMDL": {
+		"prefix": "NELMDL",
+		"body": [
+			"NELMDL = $1",
+			"$2"
+		],
+		"description": "NELMDL specifies the number of non-self-consistent steps at the beginning."
+	},
+	"PHON_TLIST": {
+		"prefix": "PHON_TLIST",
+		"body": [
+			"PHON_TLIST = $1",
+			"$2"
+		],
+		"description": "This flag provides the list of temperatures for that the electron-phonon interaction using the ZG configuration[1] is evaluated."
+	},
+	"ZAB_VDW": {
+		"prefix": "ZAB_VDW",
+		"body": [
+			"ZAB_VDW = $1",
+			"$2"
+		],
+		"description": "The tag ZAB_VDW specifies the value of the parameter Z a b {\\displaystyle Z_{ab}} in the kernel of the nonlocal vdW-DF functional of Dion et al.[1]"
+	},
+	"ZVAL": {
+		"prefix": "ZVAL",
+		"body": [
+			"ZVAL = $1",
+			"$2"
+		],
+		"description": "ZVAL describes the valency of each atomic sphere."
+	},
+	"RANDOM_SEED": {
+		"prefix": "RANDOM_SEED",
+		"body": [
+			"RANDOM_SEED = $1",
+			"$2"
+		],
+		"description": "RANDOM_SEED specifies the seed of the random-number generator (compile VASP with -Dtbdyn)."
+	},
+	"ML_W1": {
+		"prefix": "ML_W1",
+		"body": [
+			"ML_W1 = $1",
+			"$2"
+		],
+		"description": "This tag defines the weight  {\\displaystyle \\beta } for the radial (and angular) descriptor within the machine learning force field method (see this section)."
+	},
+	"ML_ICOUPLE": {
+		"prefix": "ML_ICOUPLE",
+		"body": [
+			"ML_ICOUPLE = $1",
+			"$2"
+		],
+		"description": "This tag specifies the atoms where the coupling parameter is introduced to calculate the chemical potential within the machine learning force field method."
+	},
+	"TIME": {
+		"prefix": "TIME",
+		"body": [
+			"TIME = $1",
+			"$2"
+		],
+		"description": "TIME controls the time step for IALGO=5X and for the initial (steepest descent) phase of IALGO=4X."
+	},
+	"ML_CSLOPE": {
+		"prefix": "ML_CSLOPE",
+		"body": [
+			"ML_CSLOPE = $1",
+			"$2"
+		],
+		"description": "Parameter used in the automatic determination of threshold for Bayesian error estimation in the machine learning force field method."
+	},
+	"PHON_NSTRUCT": {
+		"prefix": "PHON_NSTRUCT",
+		"body": [
+			"PHON_NSTRUCT = $1",
+			"$2"
+		],
+		"description": "This flag sets the number of structures for electron-phonon interactions from Monte-Carlo (MC) sampling."
+	},
+	"NLSPLINE": {
+		"prefix": "NLSPLINE",
+		"body": [
+			"NLSPLINE = $1",
+			"$2"
+		],
+		"description": "construct the PAW projectors in reciprocal space using spline interpolation so that they are k-differentiable."
+	},
+	"ML_MRB2": {
+		"prefix": "ML_MRB2",
+		"body": [
+			"ML_MRB2 = $1",
+			"$2"
+		],
+		"description": "This tag sets the number N R l {\\displaystyle N_{\\text{R}}^{l}} (for all l {\\displaystyle l} ) of radial basis functions used to expand the angular descriptor within the machine learning force field method."
+	},
+	"NPACO": {
+		"prefix": "NPACO",
+		"body": [
+			"NPACO = $1",
+			"$2"
+		],
+		"description": "NPACO sets the number of slots in the pair-correlation function written to PCDAT."
+	},
+	"ML_LMAX2": {
+		"prefix": "ML_LMAX2",
+		"body": [
+			"ML_LMAX2 = $1",
+			"$2"
+		],
+		"description": "This tag specifies the maximum angular momentum quantum number L max {\\displaystyle L_{\\max }} of spherical harmonics used to expand atomic distributions within the machine learning force field method."
+	}
+}
