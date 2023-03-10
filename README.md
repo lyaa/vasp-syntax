@@ -15,6 +15,8 @@ There are also a few snippets for INCAR files:
 |ISIF| Determines whether the stress tensor is calculated and which principal degrees-of-freedom are allowed to change in relaxation and molecular dynamics runs. |
 |EDIFFG or NSW or IBRION| Declare ionic relaxation parameters|
 |LSORBIT| General settings for adding spin orbit coupling. Should be applied after a self consistent run|
+|LDAUU| specify the strength of the effective on-site Coulomb interactions|
+|ISPIN or MAGMOM| General settings for spin polarized and magnetic materials|
 
 ### INCAR
 
